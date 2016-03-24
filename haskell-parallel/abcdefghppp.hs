@@ -1,12 +1,12 @@
-#!/usr/bin/env runhaskell
-
 --by phiSgr
 
 import Data.List
 import Text.Printf
 
-ps :: [[Int]]
-ps = concatMap permutations $ map (\i -> filter (/= i) [0..9]) [0..9]
+import Control.Parallel.Strategies
+
+pss :: [[[Int]]]
+pss = map permutations $ map (\i -> filter (/= i) [0..9]) [0..9]
 
 sat :: [Int] -> Bool
 sat [a,b,c,d,e,f,g,h,p] =
@@ -21,4 +21,7 @@ toEquationIO [a,b,c,d,e,f,g,h,p] = do
   printf "%d%d + %d%d = %d%d%d\n" e f g h p p p
 toEquationIO _ = error "wrong length"
 
-main = sequence $ map toEquationIO $ filter sat ps
+main =
+  let solutionss = map (filter sat) pss
+      pSolutionss = solutionss `using` parList rdeepseq in
+    sequence $ map toEquationIO $ concat $ pSolutionss

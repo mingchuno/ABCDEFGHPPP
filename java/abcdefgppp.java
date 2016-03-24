@@ -23,10 +23,10 @@ public class Permutation {
         int cd = i[2] * 10 + i[3];
         int ef = i[4] * 10 + i[5];
 
-        if (ab - cd != ef) return;
+        if ((ab - cd) != ef) return;
 
         int gh = i[6] * 10 + i[7];
-        int ppp = 111;
+        int ppp = i[8] * 100 + i[8] * 10 + i[8];
 
         if (ef + gh == ppp)
             System.out.printf("%d - %d = %d, %d + %d = %d\n", ab, cd, ef, ef, gh, ppp);

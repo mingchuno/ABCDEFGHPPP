@@ -16,7 +16,9 @@ sat [a,b,c,d,e,f,g,h,p] =
 sat _ = error "wrong length"
 
 toEquationIO :: [Int] -> IO ()
-toEquationIO [a,b,c,d,e,f,g,h,p] = printf "%d%d - %d%d = %d%d, %d%d + %d%d = %d%d%d\n" a b c d e f e f g h p p p
+toEquationIO [a,b,c,d,e,f,g,h,p] = do
+  printf "%d%d - %d%d = %d%d, " a b c d e f
+  printf "%d%d + %d%d = %d%d%d\n" e f g h p p p
 toEquationIO _ = error "wrong length"
 
 main = sequence $ map toEquationIO $ filter sat ps

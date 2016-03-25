@@ -1,0 +1,8 @@
+Start Calculation
+Time used to solve EF + GH = 111 = 34ms
+a=8,b=6,c=5,d=4,e=3,f=2,g=7,h=9,p=1
+a=8,b=5,c=4,d=6,e=3,f=9,g=7,h=2,p=1
+a=9,b=0,c=6,d=3,e=2,f=7,g=8,h=4,p=1
+a=9,b=0,c=2,d=7,e=6,f=3,g=4,h=8,p=1
+a=9,b=5,c=2,d=7,e=6,f=8,g=4,h=3,p=1
+Total Time used to solve AB - CD = 111 - GH = EF 56ms

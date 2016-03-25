@@ -5,13 +5,20 @@
 
 main(_) ->
     List = lists:seq(0,9),
-    Ret = pick_one(List, [], [], 0),
+    {error, Ret} = pick_one(List, [], [], 0, []),
+    lists:foreach(
+        fun(Ele) ->
+            print_out(Ele)
+        end, Ret).
+
+print_out(Ret) ->
     [A, B, C, D, E, F, G, H, P] = lists:reverse(Ret),
+    io:format("~n"),
     io:format("  ~p~p~n- ~p~p~n----~n  ~p~p~n+ ~p~p~n----~n ~p~p~p~n", [A,B,C,D,E,F,G,H,P,P,P]).
 
-pick_one([], _, _, _) ->
-    error;
-pick_one([Head | Rest], Acc, Err, Round) ->
+pick_one([], _, _, _, SoFar) ->
+    {error, SoFar};
+pick_one([Head | Rest], Acc, Err, Round, SoFar) ->
     Acc2 = [Head | Acc],
     Check = case Round of
                 3 ->
@@ -33,17 +40,17 @@ pick_one([Head | Rest], Acc, Err, Round) ->
             end,
     Check2 = case Check of
                  {ok, NewAcc, NewList} ->
-                     pick_one(NewList, NewAcc, [], Round + 1);
-                 error ->
-                     error;
+                     pick_one(NewList, NewAcc, [], Round + 1, SoFar);
                  Ret2 ->
                      Ret2
              end,
     case Check2 of
         error ->
-            pick_one(Rest, Acc, Err ++ [Head], Round);
-        Ret3 ->
-            Ret3
+            pick_one(Rest, Acc, Err ++ [Head], Round, SoFar);
+        {error, SoFar2} ->
+            pick_one(Rest, Acc, Err ++ [Head], Round, SoFar2);
+        {done, New} ->
+            pick_one(Rest, Acc, Err ++ [Head], Round, [New | SoFar])
     end.
 
 eval_ef(List, Rest) ->
@@ -73,14 +80,14 @@ check_ppp(List, Rest) ->
     GH = G * 10 + H,
     PPP = EF + GH,
     io:format("[PPP] EF:~p, GH:~p, PPP:~p~n",[EF, GH, PPP]),
-%% Let's pretent PPP is not 111
+%% Let's pretend PPP is not 111
 %    case PPP of
 %        111 ->
     case {PPP div 100, PPP rem 100 div 10, PPP rem 10} of
         {P,P,P} ->
             case lists:member(P, Rest) of
                 true ->
-                    [P | List];
+                    {done, [P | List]};
                 _ ->
                     error
             end;

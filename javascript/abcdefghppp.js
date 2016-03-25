@@ -1,7 +1,4 @@
-function permuatation(arr,permu,results) {
-  permu = permu || []
-  results = results || []
-
+function permuatation(arr, permu = [], results = []) {
   switch (arr.length){
     case 0 :
       // push to results
@@ -18,15 +15,7 @@ function main() {
 
   permuatation([0,1,2,3,4,5,6,7,8,9])
     .filter(possible => {
-      const a = possible[0]
-      const b = possible[1]
-      const c = possible[2]
-      const d = possible[3]
-      const e = possible[4]
-      const f = possible[5]
-      const g = possible[6]
-      const h = possible[7]
-      const p = possible[8] // if we assume p = 1 will run 10 time faster
+      const [a, b, c, d, e, f, g, h, p] = possible // if we assume p = 1 will run 10 time faster
 
       const eq1 = e*10 + f
       const eq2 = a * 10 + b  - ( c * 10 + d)
@@ -55,5 +44,3 @@ function main() {
 }
 
 main()
-
-

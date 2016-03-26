@@ -9,7 +9,7 @@ int main() {
     int x[] = { 0, 2, 3, 4, 5, 6, 7, 8, 9 };
     do {
         int ab = X(0, 1), cd = X(2, 3), ef = X(4, 5), gh = X(6, 7);
-        if ((ab - cd) == ef && (ef + gh) == 111) {
+        if ((ab >= 10 && cd >= 10 && ef >= 10 && gh >= 10) && (ab - cd) == ef && (ef + gh) == 111) {
             printf("%02d + %02d = %02d, %02d - %02d = 111\n", ab, cd, ef, ef, gh);
         }
     } while (next_permutation(x, x + 9));

@@ -4,8 +4,6 @@
 
 using namespace std;
 
-#define X(a,b) (x[a]*10+x[b])
-
 int mkInt(vector<int> &v) {
     int ret = 0;
     for (vector<int>::iterator it = v.begin(); it != v.end(); ++it) {

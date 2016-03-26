@@ -6,7 +6,7 @@ int vis[10];
 int valid(int x) {
     int y = x % 10;
     int z = x / 10;
-    return x > 0 && x < 100 && !(y == z || vis[y] || vis[z]);
+    return x >= 10 && x < 100 && !(y == z || vis[y] || vis[z]);
 }
 
 void use(int x) {
@@ -21,7 +21,7 @@ void unuse(int x) {
 
 void abcd(int ef, int gh) {
     int ab, cd;
-    for (cd = 1; cd < 100; cd++) if (valid(cd)) {
+    for (cd = 10; cd < 100; cd++) if (valid(cd)) {
         use(cd);
         ab = cd + ef;
         if (valid(ab)) {
@@ -34,7 +34,7 @@ void abcd(int ef, int gh) {
 void efgh(int p) {
     int ppp = p * 111;
     int ef, gh;
-    for (ef = 1; ef < 100; ef++) if (valid(ef)) {
+    for (ef = 10; ef < 100; ef++) if (valid(ef)) {
         use(ef);
         gh = ppp - ef;
         if (valid(gh)) {

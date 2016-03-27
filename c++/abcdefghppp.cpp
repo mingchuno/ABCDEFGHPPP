@@ -23,7 +23,7 @@ int main() {
 
         int ab = mkInt(vec_ab), cd = mkInt(vec_cd), ef = mkInt(vec_ef), gh = mkInt(vec_gh);
         if ((ab >= 10 && cd >= 10 && ef >= 10 && gh >= 10) && (ab - cd) == ef && (ef + gh) == 111) {
-            cout << ab << " + " << cd << " = " << ef << ", " << ef << " - " << gh << " = 111" << endl;
+            cout << ab << " - " << cd << " = " << ef << ", " << ef << " + " << gh << " = 111" << endl;
         }
     } while (next_permutation(x.begin(), x.end()));
 

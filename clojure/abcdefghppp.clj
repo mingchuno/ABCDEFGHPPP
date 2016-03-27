@@ -1,6 +1,8 @@
 ; http://m2.hkgolden.com/view.aspx?message=6307521&type=SW&page=1
 ; binc
 
+(require '[clojure.pprint :refer [print-table]])
+
 (defn make-seq []
   (for [x (range 10) 
         y (range 10) 
@@ -19,7 +21,5 @@
                      (= 9 (->> form (apply str) set count)))]
       form)))
 
-(prn (test-form))
-
-;; $ java -cp /opt/clojure/clojure-1.8.0.jar clojure.main abcdefghppp.clj 
-;; ([85 46 39 72 111] [86 54 32 79 111] [90 27 63 48 111] [90 63 27 84 111] [95 27 68 43 111])
+(print-table
+ (map #(zipmap ["AB" "CD" "EF" "GH" "PPP"] %) (test-form)))

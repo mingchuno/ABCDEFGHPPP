@@ -1,0 +1,72 @@
+If 0 is allowed i.e. 0...9 can be used:
+
+Compiling primary1q.mzn
+Running primary1q.mzn
+34 - 09 = 25 + 86= 111	
+----------
+36 - 09 = 27 + 84= 111	
+----------
+45 - 06 = 39 + 72= 111	
+----------
+52 - 09 = 43 + 68= 111	
+----------
+57 - 08 = 49 + 62= 111	
+----------
+57 - 09 = 48 + 63= 111	
+----------
+72 - 09 = 63 + 48= 111	
+----------
+84 - 05 = 79 + 32= 111	
+----------
+84 - 09 = 75 + 36= 111	
+----------
+85 - 06 = 79 + 32= 111	
+----------
+85 - 46 = 39 + 72= 111	
+----------
+86 - 54 = 32 + 79= 111	
+----------
+90 - 27 = 63 + 48= 111	
+----------
+90 - 63 = 27 + 84= 111	
+----------
+93 - 06 = 87 + 24= 111	
+----------
+93 - 07 = 86 + 25= 111	
+----------
+95 - 27 = 68 + 43= 111	
+----------
+==========
+Finished in 34msec
+
+If no 0 is allowed i.e. if only 1...9 can be used:
+
+85 - 46 = 39 + 72= 111	
+----------
+86 - 54 = 32 + 79= 111	
+----------
+95 - 27 = 68 + 43= 111	
+----------
+
+Remarks:
+
+% as an exercise I guess one just use paper to have 1...9 and move around to learn 
+% but it creates a lot of stir
+% this is one of the result trying to do it in a more generalised way
+% there is one similar minizinc result around but I just document it better here
+
+% some links
+
+% http://www.hk01.com/熱話/13552/家長寫程式解小一數題-專家促讓小學生動腦作答-挑戰題助長智能?utm_content=bufferf82b4&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+% https://www.facebook.com/photo.php?fbid=10206383163957694&set=a.1117941588498.2019228.1225764204&type=3
+
+% https://www.facebook.com/FrontlineTechWorkersConcernGroup/photos/a.907682852604782.1073741829.907020282671039/1124085797631152/?type=3&theater
+
+% https://www.facebook.com/VJMediaHK/posts/836505283126266?comment_id=837086356401492&notif_t=like
+
+% there is another one using minizinc, not sure I can find the links again, it is on github
+
+% this is of course this github list of all major solution
+
+
+

@@ -1,4 +1,4 @@
-% note to run this: under Configuration, you have to select user-defined option under minizinc IDE to enable more than one solutions
+  % note to run this: under Configuration, you have to select user-defined option under minizinc IDE to enable more than one solutions
 
 % allow 0 but not in the first position i.e. a, c, e, g (and p) cannot be 0
 % I think 0 should be allowed anywhere if it is a paper game moving around digits

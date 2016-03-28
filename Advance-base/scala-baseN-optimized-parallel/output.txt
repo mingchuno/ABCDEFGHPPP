@@ -1,3 +1,5 @@
+Tested Device: Macbook pro retina 15" 2012 i7 2.6G 16GB RAM
+
 Base 10
 ---------------------------
 Total Time used to solve AB - CD = 111 - GH = EF (Base 10): 517ms

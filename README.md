@@ -65,6 +65,16 @@ Base 29 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
 
 All suggestions are welcome. Just modify this file and PR
 
+
+#### output.txt rules
+All output.txt in Advance-XXX MUST include the following information
+
+* Total number of solutions 
+* First 50 solutions
+* Time used for calculation & Machine used
+* (for Base N) include all N = 10, 16, 22, 28, 34 result 
+
+
 #### Recommended Folder Structure
 ```
 ├── Advance-base/
@@ -73,14 +83,19 @@ All suggestions are welcome. Just modify this file and PR
 |     |     ├── output.txt
 |     |     ├── README.md (Optional)
 |     |     ├── run.sh (Optional)
-|     ├── javascript-generic-base-bruteforce/
+|     ├── javascript-baseN-bruteforce/ (in case your solution handle all Base)
 |     |     ├── abcdefghppp.java
-|     |     ├── output.txt
+|     |     ├── output.txt 
 |     |     ├── README.md (Optional)
 |     |     ├── run.sh (Optional)
 ├── Advance-formula/
-|     ├── haskell-base13-permutation/
+|     ├── haskell-base17-permutation/
 |     |     ├── abcdefghppp.hs
+|     |     ├── output.txt (Total number of solutions & first 50 solutions)
+|     |     ├── README.md (Optional)
+|     |     ├── run.sh (Optional)
+|     ├── ocaml-baseN-permutation/ (in case your solution handle all Base)
+|     |     ├── abcdefghppp.ml
 |     |     ├── output.txt
 |     |     ├── README.md (Optional)
 |     |     ├── run.sh (Optional)

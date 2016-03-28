@@ -11,27 +11,3 @@ Base 21 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
 Base 25 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
 
 Base 29 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
-
-All suggestions are welcome. Just modify this file and PR
-
-#### Recommended Folder Structure
-```
-├── Advance-base/
-|     ├── java-base16-bruteforce/
-|     |     ├── abcdefghppp.java
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-|     ├── javascript-generic-base-bruteforce/
-|     |     ├── abcdefghppp.java
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-├── Advance-formula/
-|     ├── haskell-base17-permutation/
-|     |     ├── abcdefghppp.hs
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-...
-```

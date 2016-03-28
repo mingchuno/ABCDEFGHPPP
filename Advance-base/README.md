@@ -12,24 +12,3 @@ Base 28 `AB - CD = EF, EF - GH = PPP`
 
 Base 34 `AB - CD = EF, EF - GH = PPP`
 
-#### Recommended Folder Structure
-```
-├── Advance-base/
-|     ├── java-base16-bruteforce/
-|     |     ├── abcdefghppp.java
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-|     ├── javascript-generic-base-bruteforce/
-|     |     ├── abcdefghppp.java
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-├── Advance-formula/
-|     ├── haskell-base17-permutation/
-|     |     ├── abcdefghppp.hs
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-...
-```

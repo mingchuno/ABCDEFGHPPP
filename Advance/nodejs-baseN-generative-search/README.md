@@ -1,4 +1,4 @@
-## problem statement
+## Problem statement
   - Question: find a,b,c,d such that
     1. all with distinct digits in base-N.
     2. all have W=floor((N-1)/4) number of digits
@@ -9,7 +9,7 @@
       for base 21, find a,b,c,d,e...s,t,u such that
         abcde-fghij=klmno && klmno+pqrst=uuuuuu
 
-## idea
+## Idea
   - generate possible value of c one by one at most B^W time. 
   - for each value of c, try to find the corresponding d.
     if not found, try next c; if found, try next step
@@ -18,25 +18,27 @@
     from least significant digit, this allow pruning a lot 
     of useless permutation.
 
-## trick
+## Tricks
   - Due to symmetry of c and d (c + d = d + c = e),
     we can just scan for c < d and then swap c and d each 
     time and do the same things twice. This allows reuse of 
     used-table and skip ~45% top-level iteration. 
     
-## time complexity  
+## Time complexity  
   - the time spent on diffSearch() is a bit hard to analysis
     the worst case is O(2^B), but usually should be much 
     faster than that.
   - Let the time complexity of diffSearch() be T.
     The overall complexity is O( B^(W+1)*T )
     
-## space complexity
+## Space complexity
   - current version use ans[] to store solutions in order 
     not to do IO. Except that only use two array 
 
-## result 
-  - test on macbook pro 2014 
+## Result 
+Test on macbook pro 2014 
+
+```
       take   <1 seconds for base 10 width 2 (        5 solutions)
       take   <1 seconds for base 16 width 2 (     1794 solutions)
       take   <1 seconds for base 22 width 2 (    17312 solutions)
@@ -53,4 +55,4 @@
       take  ~40 seconds for base 23 width 5 (  9686936 solutions) 
       
       take  ~10 minutes for base 25 width 6 (  9310592 solutions) 
-  
+  ```

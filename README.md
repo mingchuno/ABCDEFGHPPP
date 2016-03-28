@@ -45,60 +45,54 @@ PCs in this age have very powerful computation power. Thus, Base 10 `AB - CD = E
 
 Let's try more complicated scenario, all alphabats repersent a single value (in base) & distinct. It will be easier to see the significant performance difference of each approach.
 
-#### Advance Base
-Base 16 `AB - CD = EF, EF - GH = PPP`
+#### Advance 
+Base 16 `AB - CD = EF, EF - GH = PPP` (Width = 2)
 
-Base 22 `AB - CD = EF, EF - GH = PPP`
+Base 22 `AB - CD = EF, EF - GH = PPP` (Width = 2)
 
-Base 28 `AB - CD = EF, EF - GH = PPP`
+Base 28 `AB - CD = EF, EF - GH = PPP` (Width = 2)
 
-Base 34 `AB - CD = EF, EF - GH = PPP`
+Base 34 `AB - CD = EF, EF - GH = PPP` (Width = 2)
 
-#### Advance Formula
-Base 17 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
+Base 17 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ` (Width = 4)
 
-Base 21 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
+Base 21 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ` (Width = 4)
 
-Base 25 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
+Base 25 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ` (Width = 4)
 
-Base 29 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ`
+Base 29 `ABCD - EFGH = IJKL, IJKL + MNOP = QQQQQ` (Width = 4)
+
+...
+
+** You must solve at least 2 of them **
 
 All suggestions are welcome. Just modify this file and PR
 
 
 #### output.txt rules
-All output.txt in Advance-XXX MUST include the following information
+All output.txt in Advance MUST include the following information
 
+* Machine used (Must be the first line)
 * Total number of solutions 
 * First 50 solutions
-* Time used for calculation & Machine used
-* (for Base N) include all N = 10, 16, 22, 28, 34 result 
+* Time used for calculation
+* include all Base result
 
 
 #### Recommended Folder Structure
 ```
-├── Advance-base/
-|     ├── java-base16-bruteforce/
-|     |     ├── abcdefghppp.java
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-|     ├── javascript-baseN-bruteforce/ (in case your solution handle all Base)
-|     |     ├── abcdefghppp.java
-|     |     ├── output.txt 
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-├── Advance-formula/
-|     ├── haskell-base17-permutation/
-|     |     ├── abcdefghppp.hs
-|     |     ├── output.txt (Total number of solutions & first 50 solutions)
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
-|     ├── ocaml-baseN-permutation/ (in case your solution handle all Base)
-|     |     ├── abcdefghppp.ml
-|     |     ├── output.txt
-|     |     ├── README.md (Optional)
-|     |     ├── run.sh (Optional)
+├── Advance/
+|     ├── scala-optimized-permutation-parallel/ 
+|     |     ├── abcdefghppp-w2.scala (Only handle width = 2)  
+|     |     ├── output_w2.txt        (w2 = width 2)
+|     |     ├── README.md            (Optional)
+|     |     ├── run.sh               (Optional)
+|     ├── javascript-bruteforce/ 
+|     |     ├── abcdefghppp-generic.js (Handle all width)
+|     |     ├── output_w2.txt          (w2 = width 2)
+|     |     ├── output_w4.txt          (w4 = width 4)
+|     |     ├── README.md              (Optional)
+|     |     ├── run.sh                 (Optional)
 ...
 ```
 

@@ -10,6 +10,7 @@
 #  PPP
 #================================#
 # Solve the problem like a human
+library(data.table)
 add <- function(x, new_vrb, possible_value) {
   x_out <- NULL
   for (i in 1:nrow(x)) {
@@ -60,16 +61,15 @@ sol
 # If you want to print all solution
 #================================#
 sol <- as.matrix(sol)
-colnames(sol) <- toupper(colnames(sol))
 for (i in 1:nrow(sol)) {
   cat("Solution", i, ":\n")
-  cat("  ", sol[i, c("A", "B")], "\n", sep = "")
-  cat("- ", sol[i, c("C", "D")], "\n", sep = "")
+  cat("  ", sol[i, c("a", "b")], "\n", sep = "")
+  cat("- ", sol[i, c("c", "d")], "\n", sep = "")
   cat("----", "\n")
-  cat("  ", sol[i, c("E", "F")], "\n", sep = "")
-  cat("+ ", sol[i, c("G", "H")], "\n", sep = "")
+  cat("  ", sol[i, c("e", "f")], "\n", sep = "")
+  cat("+ ", sol[i, c("g", "h")], "\n", sep = "")
   cat("----", "\n")
-  cat(" ", sol[i, c("P", "P", "P")], "\n", sep = "")
+  cat(" ", sol[i, c("p", "p", "p")], "\n", sep = "")
   cat(" ===", "\n\n")
 }
 
@@ -105,16 +105,15 @@ sol
 # If you want to print all solution
 #================================#
 sol <- as.matrix(sol)
-colnames(sol) <- toupper(colnames(sol))
 for (i in 1:nrow(sol)) {
   cat("Solution", i, ":\n")
-  cat("  ", sol[i, c("A", "B")], "\n", sep = "")
-  cat("- ", sol[i, c("C", "D")], "\n", sep = "")
+  cat("  ", sol[i, c("a", "b")], "\n", sep = "")
+  cat("- ", sol[i, c("c", "d")], "\n", sep = "")
   cat("----", "\n")
-  cat("  ", sol[i, c("E", "F")], "\n", sep = "")
-  cat("+ ", sol[i, c("G", "H")], "\n", sep = "")
+  cat("  ", sol[i, c("e", "f")], "\n", sep = "")
+  cat("+ ", sol[i, c("g", "h")], "\n", sep = "")
   cat("----", "\n")
-  cat(" ", sol[i, c("P", "P", "P")], "\n", sep = "")
+  cat(" ", sol[i, c("p", "p", "p")], "\n", sep = "")
   cat(" ===", "\n\n")
 }
 

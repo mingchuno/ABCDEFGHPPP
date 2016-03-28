@@ -1,0 +1,27 @@
+      * Technical Info: 
+      * Editor use OpenCobolIDE which recommend use brew
+      * if use brew (some issues may be file directory blank)
+      *    export PATH=$PATH:/usr/local/Cellar/gcc/5.2.0/bin/
+      * if use Macport as recommended here
+      *  https://coderwall.com/p/q-fhya/
+      *   install-opencobol-with-macports
+      * still need to set 
+      *   export PATH=/opt/local/bin:/opt/local/sbin:$PATH  
+      * details see
+      *   https://guide.macports.org
+      *
+      * To execute 
+      * $ cobc -x /cob-test/abcdefghppp.COB 
+      * $ ./abcdefghppp
+      * 
+      * result as
+      * 
+      * ----------------------------------------
+      *(  A  B  C  D  E  F  G  H  P )
+      *(  8  5  4  6  3  9  7  2  1 )
+      *(  8  6  5  4  3  2  7  9  1 )
+      *(  9  0  2  7  6  3  4  8  1 )
+      *(  9  0  6  3  2  7  8  4  1 )
+      *(  9  5  2  7  6  8  4  3  1 )
+      *========================================
+ 

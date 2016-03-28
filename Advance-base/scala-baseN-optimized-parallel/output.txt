@@ -1,0 +1,241 @@
+Base 10
+---------------------------
+Total Time used to solve AB - CD = 111 - GH = EF (Base 10): 517ms
+Total number of solutions = 5
+86 - 54 = 32, 32 + 79 = 111
+95 - 27 = 68, 68 + 43 = 111
+85 - 46 = 39, 39 + 72 = 111
+90 - 27 = 63, 63 + 48 = 111
+90 - 63 = 27, 27 + 84 = 111
+
+Base 16
+---------------------------
+Total Time used to solve AB - CD = 111 - GH = EF (Base 16): 1111ms
+Total number of solutions = 1794
+Randomly print out 50 solution :
+73 - 28 = 4b, 4b + c6 = 111
+e9 - a3 = 46, 46 + cb = 111
+f9 - 4d = ac, ac + 65 = 111
+f3 - ad = 46, 46 + cb = 111
+d5 - 8f = 46, 46 + cb = 111
+cf - 95 = 3a, 3a + d7 = 111
+cd - 52 = 7b, 7b + 96 = 111
+a8 - 72 = 36, 36 + db = 111
+c5 - 28 = 9d, 9d + 74 = 111
+cd - 6e = 5f, 5f + b2 = 111
+f7 - 92 = 65, 65 + ac = 111
+fe - c5 = 39, 39 + d8 = 111
+d9 - 34 = a5, a5 + 6c = 111
+d2 - 3c = 96, 96 + 7b = 111
+7c - 28 = 54, 54 + bd = 111
+ad - 3b = 72, 72 + 9f = 111
+98 - 3e = 5a, 5a + b7 = 111
+c7 - 5e = 69, 69 + a8 = 111
+c3 - 48 = 7b, 7b + 96 = 111
+78 - 36 = 42, 42 + cf = 111
+a8 - 7d = 2b, 2b + e6 = 111
+c5 - 98 = 2d, 2d + e4 = 111
+f8 - be = 3a, 3a + d7 = 111
+a6 - 32 = 74, 74 + 9d = 111
+e7 - 3f = a8, a8 + 69 = 111
+ab - 87 = 24, 24 + ed = 111
+86 - 2c = 5a, 5a + b7 = 111
+db - 2f = ac, ac + 65 = 111
+67 - 2e = 39, 39 + d8 = 111
+b6 - 7e = 38, 38 + d9 = 111
+8d - 63 = 2a, 2a + e7 = 111
+a8 - 69 = 3f, 3f + d2 = 111
+fc - a3 = 59, 59 + b8 = 111
+c0 - 4e = 72, 72 + 9f = 111
+ef - 27 = c8, c8 + 49 = 111
+a7 - 49 = 5e, 5e + b3 = 111
+ad - 5e = 4f, 4f + c2 = 111
+ca - 38 = 92, 92 + 7f = 111
+fb - c4 = 37, 37 + da = 111
+cd - 5b = 72, 72 + 9f = 111
+94 - 5e = 36, 36 + db = 111
+f0 - 4b = a5, a5 + 6c = 111
+ae - 78 = 36, 36 + db = 111
+75 - 2a = 4b, 4b + c6 = 111
+af - 32 = 7d, 7d + 94 = 111
+80 - 4e = 32, 32 + df = 111
+e0 - a7 = 39, 39 + d8 = 111
+68 - 2e = 3a, 3a + d7 = 111
+d2 - 7f = 53, 53 + be = 111
+bf - 95 = 2a, 2a + e7 = 111
+
+
+
+
+Base 22
+---------------------------
+Total Time used to solve AB - CD = 111 - GH = EF (Base 22): 4015ms
+Total number of solutions = 17312
+Randomly print out 50 solution :
+h9 - 35 = e4, e4 + 8j = 111
+l9 - 46 = h3, h3 + 5k = 111
+75 - 4j = 28, 28 + kf = 111
+k4 - 38 = gi, gi + 65 = 111
+f3 - 64 = 8l, 8l + e2 = 111
+kl - 58 = fd, fd + 7a = 111
+ck - 95 = 3f, 3f + j8 = 111
+hj - 6k = al, al + c2 = 111
+ak - 49 = 6b, 6b + gc = 111
+hl - 7g = a5, a5 + ci = 111
+gc - 8l = 7d, 7d + fa = 111
+k2 - e8 = 5g, 5g + h7 = 111
+i7 - ck = 59, 59 + he = 111
+ja - ge = 2i, 2i + k5 = 111
+9d - 4b = 52, 52 + hl = 111
+b2 - 3j = 75, 75 + fi = 111
+l6 - fi = 5a, 5a + hd = 111
+k9 - 2f = hg, hg + 57 = 111
+ab - 5h = 4g, 4g + i7 = 111
+j6 - 47 = el, el + 82 = 111
+eb - c5 = 26, 26 + kh = 111
+ab - 5c = 4l, 4l + i2 = 111
+h5 - 7g = 9b, 9b + dc = 111
+h8 - dc = 3i, 3i + j5 = 111
+ab - 26 = 85, 85 + ei = 111
+kf - 86 = c9, c9 + ae = 111
+g6 - 5k = a8, a8 + cf = 111
+ik - 5e = d6, d6 + 9h = 111
+gd - 45 = c8, c8 + af = 111
+j3 - 2a = gf, gf + 68 = 111
+cd - 98 = 35, 35 + ji = 111
+ad - 6e = 3l, 3l + j2 = 111
+ij - 24 = gf, gf + 68 = 111
+ij - cb = 68, 68 + gf = 111
+9l - 3b = 6a, 6a + gd = 111
+9f - 2h = 6k, 6k + g3 = 111
+7e - 56 = 28, 28 + kf = 111
+cb - a6 = 25, 25 + ki = 111
+dh - 7c = 65, 65 + gi = 111
+kl - cb = 8a, 8a + ed = 111
+8a - 3b = 4l, 4l + i2 = 111
+jd - cl = 6e, 6e + g9 = 111
+94 - 3j = 57, 57 + hg = 111
+k4 - d5 = 6l, 6l + g2 = 111
+j5 - ef = 4c, 4c + ib = 111
+i4 - e9 = 3h, 3h + j6 = 111
+h0 - 23 = ej, ej + 84 = 111
+9h - 2c = 75, 75 + fi = 111
+h3 - 6b = ae, ae + c9 = 111
+db - 5j = 7e, 7e + f9 = 111
+
+
+
+
+Base 28
+---------------------------
+Total Time used to solve AB - CD = 111 - GH = EF (Base 28): 18061ms
+Total number of solutions = 73812
+Randomly print out 50 solution :
+c0 - 97 = 2l, 2l + q8 = 111
+nm - 24 = li, li + 7b = 111
+dj - 84 = 5f, 5f + ne = 111
+co - 7a = 5e, 5e + nf = 111
+c7 - 2l = 9e, 9e + jf = 111
+dq - ae = 3c, 3c + ph = 111
+ph - f4 = ad, ad + ig = 111
+ro - bf = g9, g9 + ck = 111
+q8 - 9l = gf, gf + ce = 111
+rd - ih = 8o, 8o + k5 = 111
+9g - 74 = 2c, 2c + qh = 111
+nq - gh = 79, 79 + lk = 111
+d5 - 36 = 9r, 9r + j2 = 111
+bm - 4d = 79, 79 + lk = 111
+i0 - 47 = dl, dl + f8 = 111
+qn - 8e = i9, i9 + ak = 111
+pq - 35 = ml, ml + 68 = 111
+q3 - 9d = gi, gi + cb = 111
+ha - 4i = ck, ck + g9 = 111
+gd - 53 = ba, ba + hj = 111
+pk - er = al, al + i8 = 111
+kr - 9e = bd, bd + hg = 111
+oc - 2m = li, li + 7b = 111
+9a - 5g = 3m, 3m + p7 = 111
+kd - i6 = 27, 27 + qm = 111
+ca - 6b = 5r, 5r + n2 = 111
+a7 - 6r = 38, 38 + pl = 111
+km - 4e = g8, g8 + cl = 111
+p3 - 7g = hf, hf + be = 111
+m7 - 6q = f9, f9 + dk = 111
+p6 - dr = b7, b7 + hm = 111
+kp - 4j = g6, g6 + cn = 111
+ke - 7c = d2, d2 + fr = 111
+qk - 74 = jg, jg + 9d = 111
+7c - 4r = 2d, 2d + qg = 111
+nh - el = 8o, 8o + k5 = 111
+rl - 83 = ji, ji + 9b = 111
+h2 - cg = 4e, 4e + of = 111
+rd - mi = 4n, 4n + o6 = 111
+qm - cr = dn, dn + f6 = 111
+qg - 9a = h6, h6 + bn = 111
+mh - 79 = f8, f8 + dl = 111
+lf - en = 6k, 6k + m9 = 111
+9c - 3d = 5r, 5r + n2 = 111
+kr - 5j = f8, f8 + dl = 111
+in - g3 = 2k, 2k + q9 = 111
+rj - n6 = 4d, 4d + og = 111
+mc - gf = 5p, 5p + n4 = 111
+eb - 6n = 7g, 7g + ld = 111
+cb - 9p = 2e, 2e + qf = 111
+
+
+
+Base 34
+---------------------------
+Total Time used to solve AB - CD = 111 - GH = EF (Base 34): 109505ms
+Total number of solutions = 214033
+Randomly print out 50 solution :
+lv - jm = 29, 29 + wq = 111
+wb - 5v = qe, qe + 8l = 111
+gw - 7b = 9l, 9l + pe = 111
+tl - 4a = pb, pb + 9o = 111
+l8 - ew = 6a, 6a + sp = 111
+lw - h7 = 4p, 4p + ua = 111
+vk - 6m = ow, ow + a3 = 111
+gq - a4 = 6m, 6m + sd = 111
+v7 - 4h = qo, qo + 8b = 111
+ga - 2i = dq, dq + l9 = 111
+rh - at = gm, gm + id = 111
+qr - 2u = nv, nv + b4 = 111
+sm - aj = i3, i3 + gw = 111
+xo - h3 = gl, gl + ie = 111
+r2 - h4 = 9w, 9w + p3 = 111
+m2 - 3u = i6, i6 + gt = 111
+ce - 7v = 4h, 4h + ui = 111
+ul - 43 = qi, qi + 8h = 111
+xc - 9j = nr, nr + b8 = 111
+fa - 36 = c4, c4 + mv = 111
+kj - 6r = dq, dq + l9 = 111
+qn - kx = 5o, 5o + tb = 111
+jw - dk = 6c, 6c + sn = 111
+xh - dn = js, js + f7 = 111
+mp - es = 7v, 7v + r4 = 111
+ot - 2v = lw, lw + d3 = 111
+vw - ho = e8, e8 + kr = 111
+xr - hl = g6, g6 + it = 111
+br - 2e = 9d, 9d + pm = 111
+nx - 5c = il, il + ge = 111
+kq - im = 24, 24 + wv = 111
+vm - 3u = rq, rq + 79 = 111
+ud - i6 = c7, c7 + ms = 111
+kt - 9j = ba, ba + np = 111
+bi - 2m = 8u, 8u + q5 = 111
+ox - kl = 4c, 4c + un = 111
+n2 - 7c = fo, fo + jb = 111
+g9 - ap = 5i, 5i + th = 111
+ml - ce = a7, a7 + os = 111
+xh - s6 = 5b, 5b + to = 111
+pa - 9c = fw, fw + j3 = 111
+ob - gf = 7u, 7u + r5 = 111
+rq - oe = 3c, 3c + vn = 111
+qk - gu = 9o, 9o + pb = 111
+on - je = 59, 59 + tq = 111
+lw - hp = 47, 47 + us = 111
+x5 - ut = 2a, 2a + wp = 111
+ev - 53 = 9s, 9s + p7 = 111
+i7 - bg = 6p, 6p + sa = 111
+bs - 46 = 7m, 7m + rd = 111

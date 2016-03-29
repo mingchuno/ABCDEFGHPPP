@@ -31,16 +31,20 @@
     
 ## Time complexity  
   - the time spent on diffSearch() is a bit hard to analysis
-    in amontized sense. The worst case is O(2^B), but 
+    in amontized sense. The worst case is O(B^W), but 
     usually should be much faster than that.
   - Let the time complexity of diffSearch() be T.
     The overall complexity is O( B^(W+1)*T )
     
 ## Space complexity
   - ans[] is used to store solutions in order not to do IO. 
-    Except that use two arrays of size B and two 
-    array of size W and one varying matrix of size 2*B
-    which store B*(B+1)/2 number of size 2 array.
+    Except that use 
+    1. two arrays of size B 
+    2. two array of size W 
+    3. one 2*base matrix
+    4. one 2*base*base volumn 
+    5. one (base-2*width-1)*(base-2*width-2) array
+    6. one (base-2*width-1) array
 
 ## Result 
   - Test on macbook pro 2014 (2.2 GHz Intel Core i7, single thread)

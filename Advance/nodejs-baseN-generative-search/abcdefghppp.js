@@ -7,8 +7,20 @@ function abcdefghppp(base, width, size){
   var used2 = new Array(base);
   var sp = new Array(width);
 
-  var diff = [new Array(base), new Array(base)];
-  for(i=0; i<2; i++) for(var j=0; j<base; j++) diff[i][j] = [];
+  // for storing candidate of digits of a and b
+  var vs = new Array(base-2*width-1);
+
+  // diff[0][i] = all possible pairs of digits [a,b] such that b-a = i where b > a
+  // diff[1][i] = all possible pairs of digits [a,b] such that base+b-a= i where b < a
+  var table = [new Array(base), new Array(base)];
+  var tableLen = [new Array(base), new Array(base)];
+  for(i=0; i<2; i++) for(var j=0; j<base; j++){
+    table[i][j] = new Array(base);
+    tableLen[i][j] = 0;                             // for v8 to guess type
+  }
+  var values = new Array((base-2*width-1)*(base-2*width-2));
+  for(i=0; i<values.length; i++) values[i] = 0;     // for v8 to guess type
+
 
   // EXP[i] = base^i
   var EXP = new Array(width);
@@ -61,20 +73,19 @@ function abcdefghppp(base, width, size){
   }
 
   function solveAB(c){
-    var i,t;
+    var i,j,t;
+
     // possible digits in a and b
-    var vs = [];
-    for(i=0; i<used2.length; i++) if( !used2[i] ) vs.push(i);
+    for(i=0,j=0; i<used2.length; i++) if( !used2[i] ) vs[j++] = i;
 
     // O(B*B)
-    // diff[0][i] = all possible pairs of digits [a,b] such that b-a = i
-    // diff[1][i] = all possible pairs of digits [a,b] such that 10+b-a= i
-    for(i=0; i<2; i++) for(var j=0; j<base; j++) diff[i][j].splice(0);
-    for(i=0; i<vs.length; i++){
-      for(var k=i+1; k<vs.length; k++){
-        var v1 = vs[i], v2 = vs[k];
-        diff[0][v2-v1].push([v1,v2]);
-        diff[1][base+v1-v2].push([v2,v1]);
+    for(i=0; i<2; i++) for(j=0; j<base; j++) tableLen[i][j] = 0;
+    for(i=0, t=0; i<vs.length; i++){
+      for(j=i+1; j<vs.length; j++, t++){
+        var v1 = vs[i], v2 = vs[j];
+        values[2*t] = v1; values[2*t+1] = v2;
+        var w1 = v2-v1, w2 = base+v1-v2;
+        table[0][w1][tableLen[0][w1]++] = table[1][w2][tableLen[1][w2]++] = t;
       }
     }
 
@@ -86,11 +97,12 @@ function abcdefghppp(base, width, size){
         }
         return;
       }
-      if( sp[i] + borrow === base ) return;    // this imply that a0 = b0 = 0, so not a solution
+      var di = sp[i] + borrow;
+      if( di === base ) return;    // this imply that a0 = b0 = 0, so not a solution
       for(var j=0; j<2; j++){
-        var vec = diff[j][sp[i]+borrow];
-        for(var k=0; k<vec.length; k++) {
-          var a0 = vec[k][1], b0 = vec[k][0];
+        var vec = table[j][di], len = tableLen[j][di];
+        for(var k=0; k<len; k++) {
+          var t = vec[k], a0 = values[2*t+1-j], b0 = values[2*t+j];
           if( used2[a0] || used2[b0] ) continue;
           used2[a0] = used2[b0] = true;
           diffSearch(i+1, j, a+a0*EXP[i], b+b0*EXP[i]);
@@ -121,6 +133,10 @@ function print(base,ans){
   var se = (ans[0]-ans[1]+ans[3]).toString(base);
   return [sa,'-',sb,'=',sc,', ',sc,'+',sd,'=',se].join('');
 }
+
+//var x = abcdefghppp(10,2);
+//var cnt = x[0], ans = x[1];
+//console.log( ans.map((x) => print(10,x)).sort().join('\n'));
 
 var s2 = '============================================================';
 [16,22,28,34].forEach(function(base) {

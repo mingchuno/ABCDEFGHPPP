@@ -1,3 +1,10 @@
+Machine:
+CPU: i5-4590
+RAM: 16GB
+System: ArchLinux x86_64
+Interpreter: ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+--------------------------------------------------------------------
+
 width = 2, base = 10
 
 First 50 solutions:

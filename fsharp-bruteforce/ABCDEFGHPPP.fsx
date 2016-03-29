@@ -1,15 +1,4 @@
-﻿type Result = 
-    { A: int
-      B: int
-      C: int
-      D: int
-      E: int
-      F: int
-      G: int
-      H: int
-      P: int }
-
-// For getting permutations of a list: http://stackoverflow.com/a/3129136/465056
+﻿// For getting permutations of a list: http://stackoverflow.com/a/3129136/465056
 let rec getPermutations list =
     let rec distribute e = function
         | [] -> [[e]]
@@ -31,5 +20,5 @@ let solvePermutation = function
 [0..9]
 |> getPermutations
 |> List.filter solvePermutation
-|> List.map (function [a; b; c; d; e; f; g; h; p; _] -> 
-                        { A = a; B = b; C = c; D = d; E = e; F = f; G = g; H = h; P = p } | _ -> failwith "Unexpected")
+|> List.iter (function [a; b; c; d; e; f; g; h; p; _] -> 
+                        printfn "(%i%i - %i%i = %i%i) + %i%i = %i%i%i" a b c d e f g h p p p | _ -> failwith "Unexpected")

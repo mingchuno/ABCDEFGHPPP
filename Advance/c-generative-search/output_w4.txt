@@ -1,3 +1,13 @@
+COMPILER:
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.29)
+Target: x86_64-apple-darwin15.4.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+CPU:
+Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz
+
 base=17 width=4
 ---------------------------------
 AC56-890G=2347, 2347+FEDB=11111
@@ -50,7 +60,7 @@ AG70-8B95=24EC, 24EC+FD36=11111
 A57B-809G=24EC, 24EC+FD36=11111
 958B-70AG=24EC, 24EC+FD36=11111
 6GD0-4B97=253A, 253A+FCE8=11111
-time used: 0.006234
+time used: 0.006959
 number of solutions: 1430
 
 base=21 width=4
@@ -105,7 +115,7 @@ CB9D-A857=2346, 2346+JIHG=11111
 EB9D-C857=2346, 2346+JIHG=11111
 AE9D-8B57=2346, 2346+JIHG=11111
 CE9D-AB57=2346, 2346+JIHG=11111
-time used: 0.269357
+time used: 0.261383
 number of solutions: 1595019
 
 base=25 width=4
@@ -160,7 +170,7 @@ HDC0-FA7J=2346, 2346+NMLK=11111
 IDC0-GA7J=2346, 2346+NMLK=11111
 AEC0-8B7J=2346, 2346+NMLK=11111
 FEC0-DB7J=2346, 2346+NMLK=11111
-time used: 4.569552
+time used: 4.536497
 number of solutions: 62811420
 
 base=29 width=4
@@ -215,6 +225,6 @@ DHA0-BE5N=2346, 2346+RQPO=11111
 FHA0-DE5N=2346, 2346+RQPO=11111
 IHA0-GE5N=2346, 2346+RQPO=11111
 KHA0-IE5N=2346, 2346+RQPO=11111
-time used: 39.262322
+time used: 37.421774
 number of solutions: 796724927
 

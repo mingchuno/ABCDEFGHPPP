@@ -1,0 +1,12 @@
+Macbook Air Early 2014 4 GB
+
+Welcome to DrRacket, version 6.3 [3m].
+Language: scheme; memory limit: 128 MB.
+(8 5 4 6 3 9 7 2 1)
+(8 6 5 4 3 2 7 9 1)
+(9 0 2 7 6 3 4 8 1)
+(9 0 6 3 2 7 8 4 1)
+(9 5 2 7 6 8 4 3 1)
+cpu time: 146 real time: 146 gc time: 28
+#t
+> 

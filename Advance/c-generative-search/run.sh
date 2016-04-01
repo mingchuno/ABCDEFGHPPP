@@ -5,12 +5,12 @@ function run {
   gcc -v >> $1 2>&1
   echo >> $1
   echo 'CPU:' >> $1
-  sysctl -n machdep.cpu.brand_string >> $1 
+  sysctl -n machdep.cpu.brand_string >> $1
   echo >> $1
   ./abcdefghppp <<< $2 >> $1 
 }
 
-gcc -O3 -o abcdefghppp abcdefghppp.c 
+gcc -m64 -Ofast -o abcdefghppp abcdefghppp.c || exit 1
 
 echo running w2
 run "output_w2.txt" "

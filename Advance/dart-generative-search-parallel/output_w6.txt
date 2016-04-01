@@ -1,0 +1,58 @@
+RUNTIME: Dart VM version: 1.15.0 (Wed Mar  9 09:55:45 2016) on "macos_x64"
+CPU: Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz
+NUMBER OF THREAD: 8
+
+gaj6bh-e7f0o9=2345c8, 2345c8+nmlkdi=1111111
+h9c0di-f67jo8=2345ea, 2345ea+nmlkbg=1111111
+8fi079-6cdjho=2345ea, 2345ea+nmlkbg=1111111
+gchbo0-e9d68i=2345f7, 2345f7+nmlkaj=1111111
+e9hgo0-c6db8i=2345f7, 2345f7+nmlkaj=1111111
+gbhi06-e8dc9o=2345f7, 2345f7+nmlkaj=1111111
+bhcig6-9e8d0o=2345f7, 2345f7+nmlkaj=1111111
+jbao70-h86ifd=2345gc, 2345gc+nmlk9e=1111111
+hdbo06-fa7i8j=2345gc, 2345gc+nmlk9e=1111111
+jiad0b-hf678o=2345gc, 2345gc+nmlk9e=1111111
+8ajihb-67fd0o=2345gc, 2345gc+nmlk9e=1111111
+bjh68o-9gd0fa=2345ie, 2345ie+nmlk7c=1111111
+bkf5g0-9hao8d=23467c, 23467c+nmljie=1111111
+fk9g8b-dh5a0o=23467c, 23467c+nmljie=1111111
+f8oha7-d5kb0i=23469e, 23469e+nmljgc=1111111
+d8oh07-b5kafi=23469e, 23469e+nmljgc=1111111
+k8bh0d-i57afo=23469e, 23469e+nmljgc=1111111
+7fhok0-5cdi89=2346bg, 2346bg+nmljea=1111111
+9ioc08-7fk5dh=2346bg, 2346bg+nmljea=1111111
+fco758-d9k0ih=2346bg, 2346bg+nmljea=1111111
+h8odc9-f5k70i=2346bg, 2346bg+nmljea=1111111
+haobe9-f7k50g=2346di, 2346di+nmljc8=1111111
+ajdoc0-8g9h6e=23475b, 23475b+nmlikf=1111111
+jcd6g0-h98oae=23475b, 23475b+nmlikf=1111111
+a9goj0-86chde=23475b, 23475b+nmlikf=1111111
+e9hg0a-c6d8jo=23475b, 23475b+nmlikf=1111111
+dhofc0-bek859=23476g, 23476g+nmlija=1111111
+dhocf0-bek589=23476g, 23476g+nmlija=1111111
+e8fok0-c5bhd9=23476g, 23476g+nmlija=1111111
+e8fko0-c5bdh9=23476g, 23476g+nmlija=1111111
+jcd6k0-h98o5f=2347ea, 2347ea+nmlibg=1111111
+jcd6f5-h98o0k=2347ea, 2347ea+nmlibg=1111111
+ck9o80-ah5gde=2347jb, 2347jb+nmli6f=1111111
+ekdg0a-ch985o=2347jb, 2347jb+nmli6f=1111111
+e8hgka-c5d90o=2347jb, 2347jb+nmli6f=1111111
+ek98ao-ch50gd=2347jb, 2347jb+nmli6f=1111111
+ebo096-c8jhdf=2347kg, 2347kg+nmli5a=1111111
+fcj06o-d9ehb8=2347kg, 2347kg+nmli5a=1111111
+fcb0eo-d96hj8=2347kg, 2347kg+nmli5a=1111111
+d9j08f-b6ehco=2347kg, 2347kg+nmli5a=1111111
+di57jk-bf0oa6=23489e, 23489e+nmlhgc=1111111
+ie9ko0-gb5cd6=2348aj, 2348aj+nmlhf7=1111111
+g9odbc-e6k50i=2348aj, 2348aj+nmlhf7=1111111
+e9kdbi-c6g50o=2348aj, 2348aj+nmlhf7=1111111
+9dgo50-7acfij=2348b6, 2348b6+nmlhek=1111111
+id9fo0-ga57cj=2348b6, 2348b6+nmlhek=1111111
+9gjic5-7dfa0o=2348b6, 2348b6+nmlhek=1111111
+9igj05-7fcado=2348b6, 2348b6+nmlhek=1111111
+7gj9ai-5df0oc=2348b6, 2348b6+nmlhek=1111111
+7ig9aj-5fc0od=2348b6, 2348b6+nmlhek=1111111
+result of base=25 width=6
+time elapsed: 32.24265 sec
+number of solution: 9310592
+

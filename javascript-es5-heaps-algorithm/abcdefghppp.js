@@ -13,16 +13,10 @@ function allPerm(lis, callback){
     lis[b] = t;
   }
   function run(n){
-    var i;
     if( n === 0 ) callback();
-    else if( n & 1 ){
-      for(i=0; i<=n; i++){
-        run(n-1); swap(0,n);
-      }
-    } else {
-      for(i=0; i<=n; i++){
-        run(n-1); swap(i,n);
-      }
+    else for(var i=0; i<=n; i++){
+      run(n-1);
+      swap(n&1?0:i,n);
     }
   }
   run(lis.length-1);

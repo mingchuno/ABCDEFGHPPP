@@ -60,7 +60,7 @@ A9-84=25, 25+EC=111
 D9-B4=25, 25+EC=111
 F9-D4=25, 25+EC=111
 64-3F=25, 25+EC=111
-time used: 0.000153
+time used: 0.000160
 number of solutions: 1794
 
 base=22 width=2
@@ -115,7 +115,7 @@ EA-C6=24, 24+KJ=111
 FA-D6=24, 24+KJ=111
 GA-E6=24, 24+KJ=111
 HA-F6=24, 24+KJ=111
-time used: 0.000648
+time used: 0.000640
 number of solutions: 17312
 
 base=28 width=2
@@ -170,7 +170,7 @@ L3-IR=24, 24+QP=111
 M3-JR=24, 24+QP=111
 N3-KR=24, 24+QP=111
 O3-LR=24, 24+QP=111
-time used: 0.002004
+time used: 0.001987
 number of solutions: 73812
 
 base=34 width=2
@@ -225,6 +225,6 @@ U7-S3=24, 24+WV=111
 A3-7X=24, 24+WV=111
 B3-8X=24, 24+WV=111
 C3-9X=24, 24+WV=111
-time used: 0.005108
+time used: 0.005054
 number of solutions: 214033
 

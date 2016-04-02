@@ -1,0 +1,172 @@
+Machine: Google cloud custom (22 vCPUs, 130 GB memory) - Intel Haswell
+JAVA_OPTS="-server -Xms120G -Xmx120G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
+
+[info] Running Main.Main 
+Start Calculation
+Total number of solutions = 96220
+Total Time used to solve (Base 21, Width 5): 21807ms
+kjdh0 - 2489b =  if57a,  if57a  + 36gec = 111111
+khjg0 - 2459b =  ide6a,  ide6a  + 387fc = 111111
+khgj0 - 2456e =  idbc7,  idbc7  + 38a9f = 111111
+kdej0 - 2487g =  i96b5,  i96b5  + 3cfah = 111111
+kfjh6 - 2470d =  ibcge,  ibcge  + 3a958 = 111111
+kdg8f - 2460j =  i9a7h,  i9a7h  + 3cbe5 = 111111
+k9hj0 - 247cd =  i5a68,  i5a68  + 3gbfe = 111111
+khjc0 - 2496e =  ida57,  ida57  + 38bgf = 111111
+kghe5 - 2460j =  icbd7,  icbd7  + 39a8f = 111111
+kcje0 - 2497g =  i8a65,  i8a65  + 3dbfh = 111111
+kah8b - 24c0j =  i657d,  i657d  + 3fge9 = 111111
+kjf9c - 2540h =  ieb8g,  ieb8g  + 37ad6 = 111111
+kgjh0 - 2564e =  ibdc7,  ibdc7  + 3a89f = 111111
+kgd7c - 2590j =  ib46e,  ib46e  + 3ahf8 = 111111
+k9jg0 - 25d8b =  i467a,  i467a  + 3hfec = 111111
+khbj0 - 254af =  ic786,  ic786  + 39edg = 111111
+kdje0 - 2487g =  i9b65,  i9b65  + 3cafh = 111111
+kjgh0 - 2457d =  ifb98,  ifb98  + 36ace = 111111
+kehj0 - 248d6 =  ia95f,  ia95f  + 3bcg7 = 111111
+k9jf6 - 24b0h =  i58ea,  i58ea  + 3gd7c = 111111
+kjgh0 - 2475d =  if9b8,  if9b8  + 36cae = 111111
+khej0 - 2457f =  id9b6,  id9b6  + 38cag = 111111
+kghj0 - 2465e =  icbd7,  icbd7  + 39a8f = 111111
+kjhe0 - 2478c =  ifa59,  ifa59  + 36bgd = 111111
+kejf0 - 2476g =  iac85,  iac85  + 3b9dh = 111111
+keh6d - 2480j =  ia95f,  ia95f  + 3bcg7 = 111111
+kgjf6 - 24b0a =  ic8eh,  ic8eh  + 39d75 = 111111
+kcdj0 - 2598f =  i74a6,  i74a6  + 3ehbg = 111111
+kajh0 - 247bd =  i6c58,  i6c58  + 3f9ge = 111111
+kgj7a - 24b0e =  ic86h,  ic86h  + 39df5 = 111111
+khjg0 - 2564e =  icdb7,  icdb7  + 398af = 111111
+kgdj0 - 259c7 =  ib46e,  ib46e  + 3ahf8 = 111111
+k9fce - 2570j =  i48bg,  i48bg  + 3hda6 = 111111
+kfj9c - 2450h =  ibe8g,  ibe8g  + 3a7d6 = 111111
+kahj0 - 24cb8 =  i657d,  i657d  + 3fge9 = 111111
+kgjh0 - 24d57 =  ic6be,  ic6be  + 39fa8 = 111111
+kefj0 - 2476g =  ia8c5,  ia8c5  + 3bd9h = 111111
+kjfa8 - 25b0d =  ie49g,  ie49g  + 37hc6 = 111111
+kbhj0 - 245af =  i7c86,  i7c86  + 3e9dg = 111111
+kgjh0 - 2465e =  icdb7,  icdb7  + 398af = 111111
+kbfj0 - 246ag =  i7985,  i7985  + 3ecdh = 111111
+kjhg0 - 2549b =  ied6a,  ied6a  + 378fc = 111111
+kgjh0 - 25d47 =  ib6ce,  ib6ce  + 3af98 = 111111
+kcjd0 - 2598f =  i7a46,  i7a46  + 3ebhg = 111111
+khjg0 - 25d47 =  ic6be,  ic6be  + 39fa8 = 111111
+kbjf0 - 24a6g =  i7985,  i7985  + 3ecdh = 111111
+kajh0 - 24cb8 =  i675d,  i675d  + 3feg9 = 111111
+kehj0 - 2547f =  i9db6,  i9db6  + 3c8ag = 111111
+kgjh0 - 2547d =  ibf98,  ibf98  + 3a6ce = 111111
+kghj0 - 2546e =  ibdc7,  ibdc7  + 3a89f = 111111
+
+----------------------------
+
+info] Running Main.Main 
+Start Calculation
+Total number of solutions = 1076604
+Total Time used to solve (Base 22, Width 5): 46442ms
+lkif7 - 24a5h =  jg89c,  jg89c  + 36edb = 111111
+lkf97 - 24a0i =  jg58b,  jg58b  + 36hec = 111111
+lkfbd - 2470h =  jg8ai,  jg8ai  + 36ec5 = 111111
+lkcab - 2470i =  jg59f,  jg59f  + 36hd8 = 111111
+lkhe8 - 24a0i =  jg7dc,  jg7dc  + 36f9b = 111111
+lkheb - 2450i =  jgcdf,  jgcdf  + 36a98 = 111111
+lkif7 - 2450h =  jgdec,  jgdec  + 3698b = 111111
+lkie0 - 24b89 =  jg75d,  jg75d  + 36fha = 111111
+lkih5 - 24a7f =  jg89c,  jg89c  + 36edb = 111111
+lkheb - 2470f =  jgadi,  jgadi  + 36c95 = 111111
+libh0 - 2459c =  je67a,  je67a  + 38gfd = 111111
+lkhf9 - 2470d =  jgaei,  jgaei  + 36c85 = 111111
+lkcf9 - 2470i =  jg5ed,  jg5ed  + 36h8a = 111111
+lkfe8 - 24a0i =  jg5dc,  jg5dc  + 36h9b = 111111
+likdb - 2450g =  jefch,  jefch  + 387a6 = 111111
+lkhd0 - 2495a =  jg87c,  jg87c  + 36efb = 111111
+lihk0 - 2456f =  jecd7,  jecd7  + 38a9g = 111111
+lkhe8 - 24a0c =  jg7di,  jg7di  + 36f95 = 111111
+lkceb - 2470i =  jg5df,  jg5df  + 36h98 = 111111
+libk0 - 245c9 =  je67d,  je67d  + 38gfa = 111111
+lichb - 2450k =  je7gd,  je7gd  + 38f6a = 111111
+lkheb - 2470i =  jgadf,  jgadf  + 36c98 = 111111
+lifkb - 2456h =  jeadg,  jeadg  + 38c97 = 111111
+libd9 - 2460f =  je5cg,  je5cg  + 38ha7 = 111111
+likg0 - 2456a =  jef9c,  jef9c  + 387db = 111111
+lkhdb - 2490f =  jg8ci,  jg8ci  + 36ea5 = 111111
+libk0 - 246af =  je597,  je597  + 38hdg = 111111
+lkhd7 - 2490b =  jg8ci,  jg8ci  + 36ea5 = 111111
+lkh9b - 2470f =  jga8i,  jga8i  + 36ce5 = 111111
+lkedb - 2490i =  jg5cf,  jg5cf  + 36ha8 = 111111
+lkfi0 - 247c9 =  jg85d,  jg85d  + 36eha = 111111
+lkdb7 - 2480f =  jg5ae,  jg5ae  + 36hc9 = 111111
+lkib7 - 2450e =  jgdaf,  jgdaf  + 369c8 = 111111
+lkfe7 - 24a0i =  jg5db,  jg5db  + 36h9c = 111111
+lika6 - 2450g =  jef9c,  jef9c  + 387db = 111111
+lki95 - 24b0h =  jg78a,  jg78a  + 36fed = 111111
+lkie0 - 24b8c =  jg75a,  jg75a  + 36fhd = 111111
+lkdh0 - 2459a =  jg87c,  jg87c  + 36efb = 111111
+lifb5 - 2460k =  je9a7,  je9a7  + 38dcg = 111111
+lika6 - 2450h =  jef9b,  jef9b  + 387dc = 111111
+libk0 - 246c9 =  je57d,  je57d  + 38hfa = 111111
+lidg9 - 246ak =  je75b,  je75b  + 38fhc = 111111
+likab - 2450g =  jef9h,  jef9h  + 387d6 = 111111
+libk0 - 2469f =  je5a7,  je5a7  + 38hcg = 111111
+lkfb9 - 2470d =  jg8ai,  jg8ai  + 36ec5 = 111111
+licab - 2450g =  je79h,  je79h  + 38fd6 = 111111
+lkib7 - 24d0f =  jg5ae,  jg5ae  + 36hc9 = 111111
+lkib7 - 24d0e =  jg5af,  jg5af  + 36hc8 = 111111
+lick0 - 245ag =  je796,  je796  + 38fdh = 111111
+lickb - 245ag =  je79h,  je79h  + 38fd6 = 111111
+
+--------------------
+
+[info] Running Main.Main 
+Start Calculation
+Total number of solutions = 9686936
+Total Time used to solve (Base 23, Width 5): 162627ms
+mlcb8 - 2470g =  kh5af,  kh5af  + 36id9 = 111111
+mlci0 - 2459d =  kh78a,  kh78a  + 36gfe = 111111
+mlcj0 - 2478e =  kh5a9,  kh5a9  + 36idf = 111111
+mljg0 - 2475e =  khca9,  khca9  + 36bdf = 111111
+mlie8 - 2470g =  khbdf,  khbdf  + 36ca9 = 111111
+mlij0 - 2457e =  khdb9,  khdb9  + 36acf = 111111
+mlij0 - 24578 =  khdbf,  khdbf  + 36ac9 = 111111
+mlgj0 - 2458e =  khba9,  khba9  + 36cdf = 111111
+mljg0 - 24758 =  khcaf,  khcaf  + 36bd9 = 111111
+mlcf8 - 2450i =  kh7ed,  kh7ed  + 36g9b = 111111
+mlce8 - 2470g =  kh5df,  kh5df  + 36ia9 = 111111
+mlji0 - 2479d =  khc8a,  khc8a  + 36bfe = 111111
+mlceb - 2470j =  kh5df,  kh5df  + 36ia9 = 111111
+mljg0 - 247a8 =  khc5f,  khc5f  + 36bi9 = 111111
+mlie5 - 2470j =  khbd9,  khbd9  + 36caf = 111111
+mljg0 - 247ae =  khc59,  khc59  + 36bif = 111111
+mlceb - 2450j =  kh7df,  kh7df  + 36ga9 = 111111
+mlgi0 - 2459d =  khb8a,  khb8a  + 36cfe = 111111
+mlij0 - 2457f =  khdb8,  khdb8  + 36acg = 111111
+mlij0 - 24758 =  khbdf,  khbdf  + 36ca9 = 111111
+mlci0 - 2459a =  kh78d,  kh78d  + 36gfb = 111111
+mli8b - 2450j =  khd7f,  khd7f  + 36ag9 = 111111
+mljf0 - 2479d =  khc5a,  khc5a  + 36bie = 111111
+mlig9 - 2470d =  khbfj,  khbfj  + 36c85 = 111111
+mlij0 - 245be =  khd79,  khd79  + 36agf = 111111
+mljg0 - 2457a =  khe8d,  khe8d  + 369fb = 111111
+mliga - 2470e =  khbfj,  khbfj  + 36c85 = 111111
+mlca8 - 2450i =  kh79d,  kh79d  + 36geb = 111111
+mlji0 - 2457f =  khea8,  khea8  + 369dg = 111111
+mldj9 - 245bi =  kh87e,  kh87e  + 36fga = 111111
+mlji0 - 245ac =  khe7b,  khe7b  + 369gd = 111111
+mlgi0 - 24578 =  khbaf,  khbaf  + 36cd9 = 111111
+mlgi0 - 2457e =  khba9,  khba9  + 36cdf = 111111
+mlij8 - 2457g =  khdbf,  khdbf  + 36ac9 = 111111
+mlcg9 - 2470j =  kh5fd,  kh5fd  + 36i8b = 111111
+mldj0 - 245b9 =  kh87e,  kh87e  + 36fga = 111111
+mlcj0 - 2458e =  kh7a9,  kh7a9  + 36gdf = 111111
+mli9a - 2470e =  khb8j,  khb8j  + 36cf5 = 111111
+mljg0 - 2457c =  khe8b,  khe8b  + 369fd = 111111
+mlj95 - 2470i =  khc8a,  khc8a  + 36bfe = 111111
+mljg5 - 2470i =  khcfa,  khcfa  + 36b8e = 111111
+mlci0 - 2459a =  kh78d,  kh78d  + 36gfb = 111111
+mljg9 - 2470i =  khcfe,  khcfe  + 36b8a = 111111
+mlci0 - 2458a =  kh79d,  kh79d  + 36geb = 111111
+mlifc - 2450j =  khdeg,  khdeg  + 36a98 = 111111
+mlij0 - 2475f =  khbd8,  khbd8  + 36cag = 111111
+mldj0 - 24579 =  kh8be,  kh8be  + 36fca = 111111
+mlij0 - 2475e =  khbd9,  khbd9  + 36caf = 111111
+mlij0 - 245b8 =  khd7f,  khd7f  + 36ag9 = 111111
+mldj9 - 2457i =  kh8be,  kh8be  + 36fca = 111111
+mlje8 - 2470g =  khcdf,  khcdf  + 36ba9 = 111111

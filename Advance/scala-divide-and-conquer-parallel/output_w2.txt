@@ -1,0 +1,239 @@
+Machine: Google cloud custom (22 vCPUs, 130 GB memory) - Intel Haswell
+JAVA_OPTS="-server -Xms120G -Xmx120G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
+
+[info] Running Main.Main 
+Start Calculation
+Total number of solutions = 5
+Total Time used to solve (Base 10, Width 2): 80ms
+90 - 27 = 63, 63 + 48 = 111
+95 - 27 = 68, 68 + 43 = 111
+85 - 46 = 39, 39 + 72 = 111
+86 - 54 = 32, 32 + 79 = 111
+90 - 63 = 27, 27 + 84 = 111
+
+---------------------------
+[info] Running Main.Main 
+Start Calculation
+Total number of solutions = 1794
+Total Time used to solve (Base 16, Width 2): 156ms
+f3 - 29 = ca, ca + 47 = 111
+f0 - 26 = ca, ca + 47 = 111
+f0 - 25 = cb, cb + 46 = 111
+f5 - 2d = c8, c8 + 49 = 111
+f0 - 29 = c7, c7 + 4a = 111
+f3 - 2a = c9, c9 + 48 = 111
+f5 - 2a = cb, cb + 46 = 111
+f5 - 27 = ce, ce + 43 = 111
+e6 - 29 = bd, bd + 54 = 111
+f6 - 2d = c9, c9 + 48 = 111
+f0 - 2a = c6, c6 + 4b = 111
+f3 - 28 = cb, cb + 46 = 111
+f0 - 27 = c9, c9 + 48 = 111
+f3 - 2b = c8, c8 + 49 = 111
+f6 - 28 = ce, ce + 43 = 111
+f7 - 29 = ce, ce + 43 = 111
+e4 - 2d = b7, b7 + 5a = 111
+f8 - 2a = ce, ce + 43 = 111
+f5 - 2b = ca, ca + 47 = 111
+f3 - 2d = c6, c6 + 4b = 111
+fb - 2d = ce, ce + 43 = 111
+60 - 24 = 3c, 3c + d5 = 111
+e6 - 2f = b7, b7 + 5a = 111
+e6 - 2d = b9, b9 + 58 = 111
+e7 - 2f = b8, b8 + 59 = 111
+ec - 2f = bd, bd + 54 = 111
+e9 - 2c = bd, bd + 54 = 111
+e6 - 2c = ba, ba + 57 = 111
+f8 - 2d = cb, cb + 46 = 111
+f9 - 2e = cb, cb + 46 = 111
+e7 - 2a = bd, bd + 54 = 111
+f6 - 2e = c8, c8 + 49 = 111
+f9 - 2b = ce, ce + 43 = 111
+f0 - 2d = c3, c3 + 4e = 111
+f5 - 2e = c7, c7 + 4a = 111
+f7 - 2e = c9, c9 + 48 = 111
+e3 - 2a = b9, b9 + 58 = 111
+e4 - 2c = b8, b8 + 59 = 111
+60 - 27 = 39, 39 + d8 = 111
+e9 - 2f = ba, ba + 57 = 111
+e3 - 2c = b7, b7 + 5a = 111
+e3 - 2f = b4, b4 + 5d = 111
+e0 - 2c = b4, b4 + 5d = 111
+e0 - 29 = b7, b7 + 5a = 111
+e0 - 23 = bd, bd + 54 = 111
+e3 - 29 = ba, ba + 57 = 111
+f8 - 2e = ca, ca + 47 = 111
+e3 - 26 = bd, bd + 54 = 111
+e0 - 27 = b9, b9 + 58 = 111
+e0 - 26 = ba, ba + 57 = 111
+
+---------------------------
+
+[info] Running Main.Main 
+Start Calculation
+Total number of solutions = 17312
+Total Time used to solve (Base 22, Width 2): 214ms
+l0 - 25 = ih, ih + 46 = 111
+ld - 2f = ik, ik + 43 = 111
+l5 - 2d = ie, ie + 49 = 111
+l3 - 2f = ia, ia + 4d = 111
+l6 - 28 = ik, ik + 43 = 111
+l5 - 2j = i8, i8 + 4f = 111
+l0 - 2d = i9, i9 + 4e = 111
+l5 - 2f = ic, ic + 4b = 111
+lc - 2e = ik, ik + 43 = 111
+l8 - 2a = ik, ik + 43 = 111
+l3 - 28 = ih, ih + 46 = 111
+l3 - 29 = ig, ig + 47 = 111
+l3 - 2b = ie, ie + 49 = 111
+l5 - 2c = if, if + 48 = 111
+l0 - 29 = id, id + 4a = 111
+l0 - 2f = i7, i7 + 4g = 111
+l0 - 26 = ig, ig + 47 = 111
+l0 - 2c = ia, ia + 4d = 111
+l0 - 27 = if, if + 48 = 111
+l5 - 27 = ik, ik + 43 = 111
+l8 - 2d = ih, ih + 46 = 111
+l3 - 2e = ib, ib + 4c = 111
+l0 - 28 = ie, ie + 49 = 111
+l9 - 2e = ih, ih + 46 = 111
+l6 - 2d = if, if + 48 = 111
+l0 - 2g = i6, i6 + 4h = 111
+l0 - 2a = ic, ic + 4b = 111
+l7 - 2c = ih, ih + 46 = 111
+l3 - 2a = if, if + 48 = 111
+l3 - 2b = ie, ie + 49 = 111
+l9 - 2b = ik, ik + 43 = 111
+l7 - 29 = ik, ik + 43 = 111
+l5 - 2g = ib, ib + 4c = 111
+l5 - 2h = ia, ia + 4d = 111
+l0 - 2e = i8, i8 + 4f = 111
+l5 - 2k = i7, i7 + 4g = 111
+lf - 2h = ik, ik + 43 = 111
+lh - 2j = ik, ik + 43 = 111
+l5 - 2e = id, id + 4a = 111
+l3 - 2h = i8, i8 + 4f = 111
+l3 - 2g = i9, i9 + 4e = 111
+le - 2g = ik, ik + 43 = 111
+l6 - 2c = ig, ig + 47 = 111
+lb - 2d = ik, ik + 43 = 111
+la - 2c = ik, ik + 43 = 111
+l3 - 2d = ic, ic + 4b = 111
+l5 - 2b = ig, ig + 47 = 111
+l5 - 2a = ih, ih + 46 = 111
+l0 - 2j = i3, i3 + 4k = 111
+l3 - 2c = id, id + 4a = 111
+l3 - 2j = i6, i6 + 4h = 111
+
+---------------------------
+
+[info] Running Main.Main 
+Start Calculation
+Total number of solutions = 73812
+Total Time used to solve (Base 28, Width 2): 300ms
+r5 - 27 = oq, oq + 43 = 111
+r0 - 25 = on, on + 46 = 111
+r3 - 2a = ol, ol + 48 = 111
+r0 - 2b = oh, oh + 4c = 111
+r0 - 28 = ok, ok + 49 = 111
+r0 - 2a = oi, oi + 4b = 111
+r3 - 2h = oe, oe + 4f = 111
+r0 - 2c = og, og + 4d = 111
+r0 - 2l = o7, o7 + 4m = 111
+r0 - 2d = of, of + 4e = 111
+r3 - 2e = oh, oh + 4c = 111
+r0 - 2g = oc, oc + 4h = 111
+r3 - 28 = on, on + 46 = 111
+r0 - 2j = o9, o9 + 4k = 111
+r0 - 26 = om, om + 47 = 111
+r9 - 2b = oq, oq + 43 = 111
+r3 - 2c = oj, oj + 4a = 111
+r0 - 27 = ol, ol + 48 = 111
+r3 - 2b = ok, ok + 49 = 111
+r3 - 29 = om, om + 47 = 111
+r7 - 29 = oq, oq + 43 = 111
+r0 - 2f = od, od + 4g = 111
+r0 - 29 = oj, oj + 4a = 111
+r3 - 2m = o9, o9 + 4k = 111
+r3 - 2j = oc, oc + 4h = 111
+ra - 2c = oq, oq + 43 = 111
+rh - 2j = oq, oq + 43 = 111
+rb - 2d = oq, oq + 43 = 111
+r3 - 2n = o8, o8 + 4l = 111
+rk - 2m = oq, oq + 43 = 111
+r3 - 2d = oi, oi + 4b = 111
+re - 2g = oq, oq + 43 = 111
+rj - 2l = oq, oq + 43 = 111
+r0 - 2k = o8, o8 + 4l = 111
+r0 - 2h = ob, ob + 4i = 111
+rc - 2e = oq, oq + 43 = 111
+r3 - 2f = og, og + 4d = 111
+rg - 2i = oq, oq + 43 = 111
+r3 - 2k = ob, ob + 4i = 111
+r0 - 2m = o6, o6 + 4n = 111
+rf - 2h = oq, oq + 43 = 111
+r8 - 2a = oq, oq + 43 = 111
+r6 - 28 = oq, oq + 43 = 111
+r0 - 2i = oa, oa + 4j = 111
+r3 - 2i = od, od + 4g = 111
+r0 - 2p = o3, o3 + 4q = 111
+r3 - 2l = oa, oa + 4j = 111
+r3 - 2g = of, of + 4e = 111
+ri - 2k = oq, oq + 43 = 111
+rd - 2f = oq, oq + 43 = 111
+---------------------------
+
+[info] Running Main.Main 
+Start Calculation
+Total number of solutions = 214033
+Total Time used to solve (Base 34, Width 2): 340ms
+x3 - 2a = ur, ur + 48 = 111
+x3 - 2h = uk, uk + 4f = 111
+x6 - 28 = uw, uw + 43 = 111
+x0 - 25 = ut, ut + 46 = 111
+x3 - 28 = ut, ut + 46 = 111
+xg - 2i = uw, uw + 43 = 111
+x3 - 2d = uo, uo + 4b = 111
+x0 - 27 = ur, ur + 48 = 111
+x7 - 29 = uw, uw + 43 = 111
+x0 - 2i = ug, ug + 4j = 111
+x0 - 29 = up, up + 4a = 111
+x0 - 2a = uo, uo + 4b = 111
+x0 - 2l = ud, ud + 4m = 111
+x0 - 2m = uc, uc + 4n = 111
+x0 - 2o = ua, ua + 4p = 111
+x0 - 2p = u9, u9 + 4q = 111
+x0 - 2q = u8, u8 + 4r = 111
+x3 - 2b = uq, uq + 49 = 111
+x3 - 2c = up, up + 4a = 111
+x9 - 2b = uw, uw + 43 = 111
+x0 - 26 = us, us + 47 = 111
+x0 - 28 = uq, uq + 49 = 111
+xd - 2f = uw, uw + 43 = 111
+x3 - 2e = un, un + 4c = 111
+x3 - 2f = um, um + 4d = 111
+x3 - 2g = ul, ul + 4e = 111
+x0 - 2c = um, um + 4d = 111
+x0 - 2e = uk, uk + 4f = 111
+xc - 2e = uw, uw + 43 = 111
+x0 - 2s = u6, u6 + 4t = 111
+x0 - 2v = u3, u3 + 4w = 111
+x0 - 2n = ub, ub + 4o = 111
+x0 - 2j = uf, uf + 4k = 111
+x3 - 2k = uh, uh + 4i = 111
+x0 - 2r = u7, u7 + 4s = 111
+x3 - 2j = ui, ui + 4h = 111
+x3 - 29 = us, us + 47 = 111
+x8 - 2a = uw, uw + 43 = 111
+xa - 2c = uw, uw + 43 = 111
+xf - 2h = uw, uw + 43 = 111
+xb - 2d = uw, uw + 43 = 111
+x0 - 2b = un, un + 4c = 111
+x3 - 2i = uj, uj + 4g = 111
+x0 - 2k = ue, ue + 4l = 111
+xh - 2j = uw, uw + 43 = 111
+x5 - 27 = uw, uw + 43 = 111
+x0 - 2f = uj, uj + 4g = 111
+x0 - 2d = ul, ul + 4e = 111
+xe - 2g = uw, uw + 43 = 111
+x0 - 2g = ui, ui + 4h = 111

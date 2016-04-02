@@ -1,0 +1,6 @@
+Machine: Google cloud custom (22 vCPUs, 130 GB memory) - Intel Haswell
+JAVA_OPTS="-server -Xms120G -Xmx120G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
+
+Start Calculation
+Total number of solutions = 9310592
+Total Time used to solve (Base 25, Width 6): 4678060ms

@@ -1,6 +1,6 @@
 ## Simple Divide & Conquer
 
-I will explain the methodology in Width = 3
+I will explain the methodology in Width = 4
 ```
 
    A B C D
@@ -14,37 +14,6 @@ I will explain the methodology in Width = 3
 ```
 
 First pre-generate all possible solutions for inner digit & leading digit
-
-````
-  def leadingDigitPossibleSolution(possibleToTry: Vector[Int], result:Int, lastLending:Int) = {
-    possiblePermuatationN(possibleToTry,3)
-      .filter {
-        case xs@Vector(a,c,g) =>
-          val na = a - lastLending
-          val e = result - g
-          na > 1 && na > c && c > 1 && g > 1 && na - c + g == result && e != 1 &&  !xs.contains(e)
-      }
-      .map{
-        case xs@Vector(a,c,g) =>
-          Vector(a, c, result - g, g)
-      }.toStream.par
-  }
-
-  def innerDigitPossibleSolution(possibleToTry: Vector[Int], result:Int, lending:Int, lastLending:Int) = {
-    possiblePermuatationN(possibleToTry,3)
-      .filter {
-        case xs@Vector(b,d,h) =>
-          val f = result - h
-          f != 1 && f >= 0  && f < BASE && (b + lending * BASE) - lastLending - d + h == result && f < BASE && !xs.contains(f)
-      }
-      .map{
-        case xs@Vector(b,d,h) =>
-          Vector(b, d, result - h, h)
-      }.toStream.par
-  }
-
-
-```
 
 Then we intersect the possible solutions. We will get the finally solution
 
@@ -99,35 +68,36 @@ Start the recursion
 
 ## Performance 
 Used machine : Google cloud custom (22 vCPUs, 130 GB memory) - Intel Haswell
+
 JAVA_OPTS="-server -Xms120G -Xmx120G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
 
 #### Width 2
-Base 10 ~ 0.08s
-Base 16 ~ 0.16s
-Base 22 ~ 0.21s
-Base 28 ~ 0.3s
-Base 34 ~ 0.4s
+* Base 10 ~ 0.08s
+* Base 16 ~ 0.16s
+* Base 22 ~ 0.21s
+* Base 28 ~ 0.3s
+* Base 34 ~ 0.4s
 
 #### Width 4
-Base 17 ~ 0.4s
-Base 18 ~ 0.6s
-Base 19 ~ 1s
-Base 20 ~ 2s
-Base 21 ~ 4.6s
-Base 25 ~ 48s  (use ~ 30GB RAM)
-base 26 ~ 121s (use ~ 60GB RAM)
-Base 27 ~ 225s (use ~ 120GB RAM)
+* Base 17 ~ 0.4s
+* Base 18 ~ 0.6s
+* Base 19 ~ 1s
+* Base 20 ~ 2s
+* Base 21 ~ 4.6s
+* Base 25 ~ 48s  (use ~ 30GB RAM)
+* Base 26 ~ 121s (use ~ 60GB RAM)
+* Base 27 ~ 225s (use ~ 120GB RAM)
 
-Base 28 ~ 450s (expected but not enough memory to calculate)
-Base 29 ~ 900s (expected but notenough memory to calculate)
+* Base 28 ~ 450s (expected but not enough memory to calculate)
+* Base 29 ~ 900s (expected but notenough memory to calculate)
 
 #### Width 5
-Base 21 ~ 21s
-Base 22 ~ 46s
-Base 23 ~ 162s
+* Base 21 ~ 21s
+* Base 22 ~ 46s
+* Base 23 ~ 162s
 
 #### Width 6
-Base 21 ~ 4678s
+* Base 21 ~ 4678s
 
 ## Why the memory consumption very high?
 Each recursion need to hold their possible solutions reference at particular level of branching. 

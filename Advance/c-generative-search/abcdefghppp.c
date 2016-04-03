@@ -5,19 +5,16 @@
 #define MAX_BASE 64
 #define MAX_WIDTH 7
 #define N (MAX_BASE)      // exact: base - 2*width -1
-#define N2 (N*N)          // exact: (base-2*with-1)*(base-2*with-2)
 
-#define LS(N) ((long long) 1 << (N))  // left shift
+#define LS(n) ((long long) 1 << (n))  // left shift
 
 int base, width, cnt;
-int curr, e, MIN, V;
-long long used1, used2;
+int curr, e, MIN;
+unsigned long long used1, used2;
 int sp[MAX_WIDTH], EXP[MAX_WIDTH];
-int vs[N];
-int table[MAX_BASE][N], tableLen[MAX_BASE];
-int va[N2], vb[N2];
+int table[MAX_BASE][2*N], tableLen[MAX_BASE];
 
-// display formula 
+// display formula
 char *digit = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/";
 void printInt(int x){     
   // quick hack, not work for x = 0
@@ -33,14 +30,14 @@ void print(int a, int b, int c, int d){
 }
 
 void search(int i, int di, int a, int b){
-  if( di == base ) return;    // don't know why seem never happen
+  if( di == base ) return;    // can't prove this never happen
   if( i == width ){
     if( a > b && b > MIN ) if( cnt++ < OUTPUT_SIZE ) print(a,b,curr,e-curr);
     return;
   }
   int *ts = table[di], len = tableLen[di], di_ = sp[i+1];
-  for(int j=0; j<len; j++){
-    int t = ts[j], a0 = va[t], b0 = vb[t];
+  for(int j=0; j<len; j+=2){
+    int a0 = ts[j], b0 = ts[j+1];
     long long  mask = LS(a0) + LS(b0);
     if( used2 & mask ) continue;
     used2 |= mask;
@@ -50,35 +47,33 @@ void search(int i, int di, int a, int b){
 }
 
 void solveAB(int c){
-  int i,j,t;
-
-  // possible digits in a and b
-  for(i=0,j=0; i<base; i++) if( ~used2 & LS(i) ) vs[j++] = i;
+  int i,j;
 
   // clear table
   for(i=0; i<base; i++) tableLen[i] = 0;
 
   // O( B*B )
-  t=0;
-  for(i=0; i<V; i++){
-    for(j=i+1; j<V; j++){
-      int v1 = vs[i], v2 = vs[j];
-      int i1 = v2-v1, i2 = base+v1-v2;
+  for(i=0; i<base; i++){
+    if( used2 & LS(i) ) continue;
 
-      table[i1][tableLen[i1]++] = t;
-      va[t] = v2; vb[t] = v1; t++;
-      table[i2][tableLen[i2]++] = t;
-      va[t] = v1; vb[t] = v2; t++;
+    for(j=i+1; j<base; j++){
+      if( used2 & LS(j) ) continue; 
+
+      int i1 = j-i, i2 = base+i-j;
+      table[i1][tableLen[i1]++] = j;
+      table[i1][tableLen[i1]++] = i;
+      table[i2][tableLen[i2]++] = i;
+      table[i2][tableLen[i2]++] = j;
     }
   }
   
   curr = c;
-  for(i=0, t=curr; i<width; i++, t /= base ) sp[i] = t%base;
+  for(i=0, j=curr; i<width; i++, j /= base ) sp[i] = j%base;
   search(0, sp[0], 0, 0);
   
   // due to symmetry of c and d
   curr = e - c;
-  for(i=0, t=curr; i<width; i++, t /= base ) sp[i] = t%base;
+  for(i=0, j=curr; i<width; i++, j /= base ) sp[i] = j%base;
   search(0, sp[0], 0, 0);
 }
 
@@ -117,9 +112,6 @@ int abcdefghppp(int b, int w){
   int i;
 
   base = b; width = w; cnt = 0;
-
-  // for storing candidate of digits of a and b
-  V = base-2*width-1;
 
   // EXP[i] = base^i
   EXP[0] = 1;

@@ -1,0 +1,1 @@
+ env  JAVA_OPTS="-server -Xms120G -Xmx120G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC" sbt run

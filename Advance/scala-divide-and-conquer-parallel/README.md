@@ -1,4 +1,5 @@
 ## Simple Divide & Conquer
+**Note: It is not a efficient alogrithm but it is better than permutation and easier to implement.**
 
 I will explain the methodology in Width = 4
 ```
@@ -15,22 +16,14 @@ I will explain the methodology in Width = 4
 
 First pre-generate all possible solutions for inner digit & leading digit
 
-Then we intersect the possible solutions. We will get the finally solution
+Then we cross & filter the possible solutions => finally solution
 
-i.e. one of the solution
+i.e.
 
-`D - H + P = 11`  intersect `C - G + O = 10`  intersect `B - F + N = 10` intersect `A - E + M = 10`
+`D - H + P = 11` cross `C - G + O = 10`  cross `B - F + N = 10` cross `A - E + M = 10`
 
-```
-      val leadingDigitPossibleSolutions = leadingDigitPossibleSolutionMap(branchState,lastLending)
 
-      if(pos > 1) leadingDigitPossibleSolutions.flatMap {
-        case ps => possibleSolutions.filter(xs => !xs.contains(ps(0)) && !xs.contains(ps(1)) && !xs.contains(ps(2)) && !xs.contains(ps(3)) ).map(ps ++ _)
-      } else possibleSolutions
-
-```
-
-Choose the possible branches from two possible starting point and run recursively
+Recursively repeat the procedures. Choose the possible branches from two possible starting point (right most)
 
 ```
              
@@ -57,7 +50,8 @@ Start the recursion
       possibleToTry = possibleToTry,
       branchState = State_11,
       lending = 1
-    ) ++ func(
+    )
+    func(
       possibleToTry = possibleToTry,
       branchState = State_11,
       lending = 0
@@ -67,42 +61,50 @@ Start the recursion
 ```
 
 ## Performance 
-Used machine : Google cloud custom (22 vCPUs, 130 GB memory) - Intel Haswell
+Used machine : Google cloud custom (24 vCPUs, 156 GB memory) - Intel Haswell
 
-JAVA_OPTS="-server -Xms120G -Xmx120G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
+JAVA_OPTS="-server -Xms150G -Xmx150G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
 
 #### Width 2
 * Base 10 ~ 0.08s
-* Base 16 ~ 0.16s
+* Base 16 ~ 0.11s
 * Base 22 ~ 0.21s
 * Base 28 ~ 0.3s
 * Base 34 ~ 0.4s
 
+* Base 50 ~ 1.2s
+* Base 70 ~ 3.2s
+* Base 100 ~ 9.3s
+
 #### Width 4
 * Base 17 ~ 0.4s
-* Base 18 ~ 0.6s
-* Base 19 ~ 1s
-* Base 20 ~ 2s
-* Base 21 ~ 4.6s
-* Base 25 ~ 48s  (use ~ 30GB RAM)
+* Base 21 ~ 1.4s
+* Base 25 ~ 17.8s(use ~ 30GB RAM)
 * Base 26 ~ 121s (use ~ 60GB RAM)
-* Base 27 ~ 225s (use ~ 120GB RAM)
+* Base 27 ~ 187s (use ~ 120GB RAM)
 
-* Base 28 ~ 450s (expected but not enough memory to calculate)
-* Base 29 ~ 900s (expected but notenough memory to calculate)
+* Base 28 ~ 360s (expected but not enough memory to calculate)
+* Base 29 ~ 720s (expected but notenough memory to calculate)
 
 #### Width 5
-* Base 21 ~ 21s
-* Base 22 ~ 46s
-* Base 23 ~ 162s
+* Base 21 ~ 5s
+* Base 22 ~ 12s
+* Base 23 ~ 55s
 
 #### Width 6
-* Base 21 ~ 4678s
+* Base 25 ~ 4678s
+
+## Why is it so slow on large width?
+As the only operation is "Cross and filter" on the possible solutions. When the set of possible solution is too large, the operation on a huge set will become super slow. 
+
+Time complexity for List Operation(Cross and filter) = `O(n^2)`
+
+For the worst case, the possible solution set double after crossing, total time complexity = `O(n^(2W))`
+
 
 ## Why the memory consumption very high?
 Each recursion need to hold their possible solutions reference at particular level of branching. 
 
 
 ## Room of improvements
-* Reduce Memeory consumption
 * Use akka-stream for distributed calculation

@@ -1,231 +1,251 @@
-Machine: Google cloud custom (22 vCPUs, 130 GB memory) - Intel Haswell
-JAVA_OPTS="-server -Xms120G -Xmx120G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
+Machine: Google cloud custom (24 vCPUs, 156 GB memory) - Intel Haswell
+JAVA_OPTS="-server -Xms150G -Xmx150G -XX:SurvivorRatio=8 -XX:ParallelGCThreads=17 -XX:+UseParallelGC"
  
-[info] Running Main.Main 
 Start Calculation
+Total Time used to solve (Base 17, Width 4): 346ms
 Total number of solutions = 1430
-Total Time used to solve (Base 17, Width 4): 437ms
-5gf0 - 2c6a = 3487, 3487 + ed9b = 11111
-dfg0 - 2a73 = b58e, b58e + 6c94 = 11111
-fae6 - 320g = c8d7, c8d7 + 594b = 11111
-af7d - 230g = 8c6e, 8c6e + 95b4 = 11111
-gb67 - 390e = d25a, d25a + 4fc8 = 11111
-agc0 - 257e = 8b43, 8b43 + 96df = 11111
-9ge6 - 2b08 = 75df, 75df + ac43 = 11111
-afe6 - 230g = 8cd7, 8cd7 + 954b = 11111
-5gca - 370d = 29be, 29be + f864 = 11111
-5eg0 - 3a7b = 2486, 2486 + fd9c = 11111
-gdb4 - 250f = e8a6, e8a6 + 397c = 11111
-ab6e - 270g = 845f, 845f + 9dc3 = 11111
-feg0 - 263a = d8c7, d8c7 + 495b = 11111
-5gf0 - 27ab = 3946, 3946 + e8dc = 11111
-gfd0 - 2a46 = e58b, e58b + 3c97 = 11111
-egf0 - 236a = cd87, cd87 + 549b = 11111
-dfg0 - 27a3 = b85e, b85e + 69c4 = 11111
-dga0 - 274e = b953, b953 + 68cf = 11111
-af56 - 2c0g = 8347, 8347 + 9edb = 11111
-gdf0 - 254b = e8a6, e8a6 + 397c = 11111
-5ge0 - 3c79 = 2468, 2468 + fdba = 11111
-dcg0 - 245e = b8a3, b8a3 + 697f = 11111
-gea0 - 357b = d926, d926 + 48fc = 11111
-gef0 - 362a = d8c7, d8c7 + 495b = 11111
-feg0 - 362a = c8d7, c8d7 + 594b = 11111
-gce0 - 3a56 = d28b, d28b + 4f97 = 11111
-abf5 - 270g = 84e6, 84e6 + 9d3c = 11111
-fa7d - 320g = c86e, c86e + 59b4 = 11111
-gfd0 - 254b = ea86, ea86 + 379c = 11111
-7gd0 - 2a4e = 5683, 5683 + cb9f = 11111
-gfd0 - 2479 = eb58, eb58 + 36ca = 11111
-9dg0 - 284e = 75b3, 75b3 + ac6f = 11111
-gbf0 - 246c = e785, e785 + 3a9d = 11111
-d9f7 - 240g = b5e8, b5e8 + 6c3a = 11111
-gfa0 - 275b = e846, e846 + 39dc = 11111
-g9c5 - 370e = d2b8, d2b8 + 4f6a = 11111
-cgd0 - 254e = ab83, ab83 + 769f = 11111
-fgb0 - 362d = ca84, ca84 + 579e = 11111
-ecd0 - 345f = b872, b872 + 69ag = 11111
-8g5c - 290e = 674f, 674f + bad3 = 11111
-fe78 - 3a09 = c46g, c46g + 5db2 = 11111
-bgf0 - 2d45 = 93ac, 93ac + 8e76 = 11111
-bg5c - 260e = 9a4f, 9a4f + 87d3 = 11111
-gfd4 - 260a = e9cb, e9cb + 3857 = 11111
-af74 - 2c0g = 8365, 8365 + 9ebd = 11111
-gef0 - 326a = dc87, dc87 + 459b = 11111
-e9g0 - 34d7 = b52a, b52a + 6cf8 = 11111
-cdg0 - 254e = a8b3, a8b3 + 796f = 11111
-d98e - 240g = b57f, b57f + 6ca3 = 11111
-d9g0 - 248e = b573, b573 + 6caf = 11111
+dgf2 - 7409 = 6cea,  6cea + b538 = 11111
+df48 - 7a09 = 653g,  653g + bce2 = 11111
+dfa4 - 7c05 = 639g,  639g + be82 = 11111
+gfd0 - 2479 = eb58,  eb58 + 36ca = 11111
+gbf0 - 246c = e785,  e785 + 3a9d = 11111
+gfd0 - 254b = ea86,  ea86 + 379c = 11111
+gdb4 - 250f = e8a6,  e8a6 + 397c = 11111
+gdf0 - 254b = e8a6,  e8a6 + 397c = 11111
+gfd4 - 260a = e9cb,  e9cb + 3857 = 11111
+gfa0 - 275b = e846,  e846 + 39dc = 11111
+gfd0 - 2a46 = e58b,  e58b + 3c97 = 11111
+bg5c - 260e = 9a4f,  9a4f + 87d3 = 11111
+fga0 - 725b = 8e46,  8e46 + 93dc = 11111
+7gd0 - 2a4e = 5683,  5683 + cb9f = 11111
+fdg0 - 72a3 = 8b5e,  8b5e + 96c4 = 11111
+fdc4 - 7a05 = 83bg,  83bg + 9e62 = 11111
+7gd0 - 2a4e = 5683,  5683 + cb9f = 11111
+afd8 - 7409 = 3bcg,  3bcg + e652 = 11111
+adc0 - 745f = 3962,  3962 + e8bg = 11111
+af5b - 760c = 394g,  394g + e8d2 = 11111
+abd0 - 764f = 3582,  3582 + ec9g = 11111
+af68 - 7b09 = 345g,  345g + edc2 = 11111
+g5f0 - 72ab = 9346,  9346 + 8edc = 11111
+gda0 - 724e = 9b53,  9b53 + 86cf = 11111
+g5ca - 730d = 92be,  92be + 8f64 = 11111
+gb3a - 760d = 952e,  952e + 8cf4 = 11111
+gbd0 - 76a3 = 952e,  952e + 8cf4 = 11111
+gec0 - 7a52 = 946f,  946f + 8db3 = 11111
+gd45 - 7b0a = 923c,  923c + 8fe6 = 11111
+gea0 - 7c34 = 926d,  926d + 8fb5 = 11111
+cgd0 - 254e = ab83,  ab83 + 769f = 11111
+cdg0 - 254e = a8b3,  a8b3 + 796f = 11111
+9gc5 - 730e = 2db8,  2db8 + f46a = 11111
+9ge3 - 750c = 2bd8,  2bd8 + f64a = 11111
+baf5 - 720g = 48e6,  48e6 + d93c = 11111
+9g48 - 7a0c = 263d,  263d + fbe5 = 11111
+9g80 - 7a4c = 2635,  2635 + fbed = 11111
+ba6e - 720g = 485f,  485f + d9c3 = 11111
+9gc0 - 7a84 = 263d,  263d + fbe5 = 11111
+b9g5 - 760c = 43fa,  43fa + de28 = 11111
+9g46 - 7b0d = 253a,  253a + fce8 = 11111
+beg0 - 76a2 = 485f,  485f + d9c3 = 11111
+9g64 - 7d0b = 235a,  235a + fec8 = 11111
+bfa5 - 7c06 = 439g,  439g + de82 = 11111
+8g5c - 290e = 674f,  674f + bad3 = 11111
+9dg0 - 284e = 75b3,  75b3 + ac6f = 11111
+9ge6 - 2b08 = 75df,  75df + ac43 = 11111
+f95b - 860c = 734g,  734g + aed2 = 11111
+d9f7 - 240g = b5e8,  b5e8 + 6c3a = 11111
+d98e - 240g = b57f,  b57f + 6ca3 = 11111
+d9g0 - 248e = b573,  b573 + 6caf = 11111
 
 -----------------------------
 
-[info] Running Main.Main 
 Start Calculation
+Total Time used to solve (Base 21, Width 4): 1428ms
 Total number of solutions = 1595019
-Total Time used to solve (Base 21, Width 4): 4658ms
-kj89 - 240d = if7h, if7h + 36e5 = 11111
-kje5 - 240g = ifda, ifda + 368c = 11111
-kj8c - 240g = if7h, if7h + 36e5 = 11111
-kj9c - 240g = if8h, if8h + 36d5 = 11111
-kje7 - 240b = ifdh, ifdh + 3685 = 11111
-kjec - 240g = ifdh, ifdh + 3685 = 11111
-kjda - 240e = ifch, ifch + 3695 = 11111
-kjc9 - 240d = ifbh, ifbh + 36a5 = 11111
-kj9a - 240e = if8h, if8h + 36d5 = 11111
-kj95 - 240g = if8a, if8a + 36dc = 11111
-kjh0 - 245d = ifb8, ifb8 + 36ae = 11111
-kjd7 - 240b = ifch, ifch + 3695 = 11111
-kjg0 - 247b = if8a, if8a + 36dc = 11111
-kjga - 247e = if8h, if8h + 36d5 = 11111
-kjda - 240h = ifce, ifce + 3698 = 11111
-kja7 - 240b = if9h, if9h + 36c5 = 11111
-kj97 - 240b = if8h, if8h + 36d5 = 11111
-kjg0 - 245d = ifa8, ifa8 + 36be = 11111
-kj85 - 240h = if79, if79 + 36ed = 11111
-kjh0 - 2458 = ifbd, ifbd + 36a9 = 11111
-kj85 - 240g = if7a, if7a + 36ec = 11111
-kje7 - 245g = if8c, if8c + 36da = 11111
-kjc5 - 240h = ifb9, ifb9 + 36ad = 11111
-kje7 - 240g = ifdc, ifdc + 368a = 11111
-kj95 - 240e = if8c, if8c + 36da = 11111
-kj97 - 240g = if8c, if8c + 36da = 11111
-kjc9 - 240g = ifbe, ifbe + 36a8 = 11111
-kjd8 - 245h = if7c, if7c + 36ea = 11111
-kjg0 - 2479 = if8c, if8c + 36da = 11111
-kje0 - 2459 = if8c, if8c + 36da = 11111
-kje0 - 245b = if8a, if8a + 36dc = 11111
-kje0 - 248c = if59, if59 + 36gd = 11111
-kje0 - 248b = if5a, if5a + 36gc = 11111
-kjd8 - 247h = if5c, if5c + 36ga = 11111
-kjd0 - 2479 = if5c, if5c + 36ga = 11111
-kjh0 - 247d = if98, if98 + 36ce = 11111
-kjg0 - 2458 = ifad, ifad + 36b9 = 11111
-kjd0 - 2459 = if7c, if7c + 36ea = 11111
-kjg0 - 2457 = ifae, ifae + 36b8 = 11111
-kjd0 - 247b = if5a, if5a + 36gc = 11111
-kjh0 - 2457 = ifbe, ifbe + 36a8 = 11111
-kje0 - 2489 = if5c, if5c + 36ga = 11111
-kjg5 - 247e = if8c, if8c + 36da = 11111
-kjh8 - 245g = ifbd, ifbd + 36a9 = 11111
-kjh0 - 245c = ifb9, ifb9 + 36ad = 11111
-kjc8 - 240g = ifbd, ifbd + 36a9 = 11111
-kjh9 - 245g = ifbe, ifbe + 36a8 = 11111
-kjd0 - 245b = if7a, if7a + 36ec = 11111
-kjg0 - 245c = ifa9, ifa9 + 36bd = 11111
-kjda - 247h = if5e, if5e + 36g8 = 11111
+ck6b - 420h = 8i5f,  8i5f + d3g7 = 11111
+ckg7 - 420b = 8ifh,  8ifh + d365 = 11111
+ckga - 420e = 8ifh,  8ifh + d365 = 11111
+ck7a - 420e = 8i6h,  8i6h + d3f5 = 11111
+ckf5 - 420a = 8ieg,  8ieg + d376 = 11111
+ckf6 - 420a = 8ieh,  8ieh + d375 = 11111
+ckh0 - 4256 = 8ibf,  8ibf + d3a7 = 11111
+ckh0 - 425e = 8ib7,  8ib7 + d3af = 11111
+ckh0 - 425f = 8ib6,  8ib6 + d3ag = 11111
+ckh9 - 425e = 8ibg,  8ibg + d3a6 = 11111
+ckhe - 425j = 8ibg,  8ibg + d3a6 = 11111
+ckg0 - 4256 = 8iaf,  8iaf + d3b7 = 11111
+ckg0 - 425e = 8ia7,  8ia7 + d3bf = 11111
+c5k0 - 4296 = 83af,  83af + dib7 = 11111
+ckh0 - 426e = 8ia7,  8ia7 + d3bf = 11111
+ckh5 - 426j = 8ia7,  8ia7 + d3bf = 11111
+ckj0 - 4275 = 8ibg,  8ibg + d3a6 = 11111
+ckj0 - 427f = 8ib6,  8ib6 + d3ag = 11111
+ckj0 - 427g = 8ib5,  8ib5 + d3ah = 11111
+ckj9 - 427e = 8ibg,  8ibg + d3a6 = 11111
+cke0 - 427g = 8i65,  8i65 + d3fh = 11111
+ckh0 - 4295 = 8i7g,  8i7g + d3e6 = 11111
+ckh0 - 429f = 8i76,  8i76 + d3eg = 11111
+ckh5 - 429a = 8i7g,  8i7g + d3e6 = 11111
+ckha - 429f = 8i7g,  8i7g + d3e6 = 11111
+ckg7 - 429b = 8i6h,  8i6h + d3f5 = 11111
+ckga - 429e = 8i6h,  8i6h + d3f5 = 11111
+ckj0 - 42b5 = 8i7g,  8i7g + d3e6 = 11111
+ckj0 - 42bf = 8i76,  8i76 + d3eg = 11111
+ckj0 - 42bg = 8i75,  8i75 + d3eh = 11111
+ckj5 - 42ba = 8i7g,  8i7g + d3e6 = 11111
+ckj6 - 42ba = 8i7h,  8i7h + d3e5 = 11111
+ckja - 42bf = 8i7g,  8i7g + d3e6 = 11111
+ckh0 - 42b6 = 8i5f,  8i5f + d3g7 = 11111
+ckh0 - 42be = 8i57,  8i57 + d3gf = 11111
+c5h0 - 426e = 83a7,  83a7 + dibf = 11111
+c5he - 426k = 83af,  83af + dib7 = 11111
+c5j0 - 427f = 83b6,  83b6 + diag = 11111
+c5j9 - 427e = 83bg,  83bg + dia6 = 11111
+c5jf - 427k = 83bg,  83bg + dia6 = 11111
+c5k0 - 4296 = 83af,  83af + dib7 = 11111
+c5k0 - 429e = 83a7,  83a7 + dibf = 11111
+c5k0 - 429f = 83a6,  83a6 + dibg = 11111
+c5ke - 429j = 83ag,  83ag + dib6 = 11111
+c5h0 - 429f = 8376,  8376 + dieg = 11111
+c5ha - 429f = 837g,  837g + die6 = 11111
+c5hf - 429k = 837g,  837g + die6 = 11111
+c5j0 - 42bf = 8376,  8376 + dieg = 11111
+c5ja - 42bf = 837g,  837g + die6 = 11111
+c5jf - 42bk = 837g,  837g + die6 = 11111
+ci79 - 420b = 8g6j,  8g6j + d5f3 = 11111
 
 -----------------------------
 
-[info] Running Main.Main 
+[DEBUG] Total memory(145.00)GB, Free memory:138.70GB
 Start Calculation
+[DEBUG] Total memory(145.00)GB, Free memory:119.84GB
+Total Time used to solve (Base 25, Width 4): 17855ms
 Total number of solutions = 62811420
-Total Time used to solve (Base 25, Width 4): 47737ms
-on8b - 240f = mj7l, mj7l + 36i5 = 11111
-on8d - 240h = mj7l, mj7l + 36i5 = 11111
-onig - 240k = mjhl, mjhl + 3685 = 11111
-onl8 - 240g = mjkh, mjkh + 3659 = 11111
-on89 - 240d = mj7l, mj7l + 36i5 = 11111
-onl7 - 240i = mjke, mjke + 365c = 11111
-on8c - 240l = mj7g, mj7g + 36ia = 11111
-oni7 - 240l = mjhb, mjhb + 368f = 11111
-oni9 - 240d = mjhl, mjhl + 3685 = 11111
-onl7 - 240f = mjkh, mjkh + 3659 = 11111
-oni7 - 240b = mjhl, mjhl + 3685 = 11111
-oni9 - 240k = mjhe, mjhe + 368c = 11111
-on8a - 240l = mj7e, mj7e + 36ic = 11111
-onia - 240k = mjhf, mjhf + 368b = 11111
-onib - 240f = mjhl, mjhl + 3685 = 11111
-oni5 - 240k = mjha, mjha + 368g = 11111
-onl7 - 240h = mjkf, mjkf + 365b = 11111
-on85 - 240d = mj7h, mj7h + 36i9 = 11111
-on85 - 240k = mj7a, mj7a + 36ig = 11111
-on9b - 240f = mj8l, mj8l + 36h5 = 11111
-onl9 - 240g = mjki, mjki + 3658 = 11111
-on85 - 240e = mj7g, mj7g + 36ia = 11111
-on9a - 240e = mj8l, mj8l + 36h5 = 11111
-on85 - 240g = mj7e, mj7e + 36ic = 11111
-onl8 - 240h = mjkg, mjkg + 365a = 11111
-onl8 - 240i = mjkf, mjkf + 365b = 11111
-oni7 - 240k = mjhc, mjhc + 368e = 11111
-on8b - 240k = mj7g, mj7g + 36ia = 11111
-on85 - 240l = mj79, mj79 + 36ih = 11111
-onl9 - 240i = mjkg, mjkg + 365a = 11111
-onia - 240e = mjhl, mjhl + 3685 = 11111
-onia - 240l = mjhe, mjhe + 368c = 11111
-on8d - 240l = mj7h, mj7h + 36i9 = 11111
-onla - 240i = mjkh, mjkh + 3659 = 11111
-on8a - 240k = mj7f, mj7f + 36ib = 11111
-onic - 240g = mjhl, mjhl + 3685 = 11111
-oni5 - 240g = mjhe, mjhe + 368c = 11111
-onl7 - 240e = mjki, mjki + 3658 = 11111
-oni5 - 240e = mjhg, mjhg + 368a = 11111
-on89 - 240k = mj7e, mj7e + 36ic = 11111
-on8c - 240k = mj7h, mj7h + 36i9 = 11111
-on97 - 240b = mj8l, mj8l + 36h5 = 11111
-on8c - 240g = mj7l, mj7l + 36i5 = 11111
-onla - 240h = mjki, mjki + 3658 = 11111
-on8a - 240e = mj7l, mj7l + 36i5 = 11111
-on95 - 240g = mj8e, mj8e + 36hc = 11111
-on8g - 240k = mj7l, mj7l + 36i5 = 11111
-onic - 240l = mjhg, mjhg + 368a = 11111
-on95 - 240e = mj8g, mj8g + 36ha = 11111
-onib - 240k = mjhg, mjhg + 368a = 11111
+6l95 - 430e = 2i8g,  2i8g + n7ha = 11111
+7oi6 - 230f = 5lhg,  5lhg + k48a = 11111
+7oi6 - 230g = 5lhf,  5lhf + k48b = 11111
+7oi6 - 230j = 5lhc,  5lhc + k48e = 11111
+7oi9 - 230j = 5lhf,  5lhf + k48b = 11111
+6l95 - 430g = 2i8e,  2i8e + n7hc = 11111
+6l95 - 430j = 2i8b,  2i8b + n7hf = 11111
+6l95 - 430k = 2i8a,  2i8a + n7hg = 11111
+6l9a - 430k = 2i8f,  2i8f + n7hb = 11111
+6l9b - 430k = 2i8g,  2i8g + n7ha = 11111
+6l9d - 430m = 2i8g,  2i8g + n7ha = 11111
+6l9a - 430o = 2i8b,  2i8b + n7hf = 11111
+6l9f - 430o = 2i8g,  2i8g + n7ha = 11111
+6l9b - 430m = 2i8e,  2i8e + n7hc = 11111
+6l9c - 430m = 2i8f,  2i8f + n7hb = 11111
+6l9b - 430o = 2i8c,  2i8c + n7he = 11111
+6l9e - 430o = 2i8f,  2i8f + n7hb = 11111
+6l9d - 430o = 2i8e,  2i8e + n7hc = 11111
+6lh5 - 430j = 2igb,  2igb + n79f = 11111
+6lh8 - 430j = 2ige,  2ige + n79c = 11111
+6lh8 - 430m = 2igb,  2igb + n79f = 11111
+6lha - 430k = 2igf,  2igf + n79b = 11111
+6lha - 430o = 2igb,  2igb + n79f = 11111
+6lhb - 430m = 2ige,  2ige + n79c = 11111
+6lhc - 430m = 2igf,  2igf + n79b = 11111
+6lhb - 430o = 2igc,  2igc + n79e = 11111
+6lhe - 430o = 2igf,  2igf + n79b = 11111
+6lhd - 430o = 2ige,  2ige + n79c = 11111
+6la5 - 430j = 2i9b,  2i9b + n7gf = 11111
+6la8 - 430j = 2i9e,  2i9e + n7gc = 11111
+6la8 - 430m = 2i9b,  2i9b + n7gf = 11111
+6lab - 430m = 2i9e,  2i9e + n7gc = 11111
+6lac - 430m = 2i9f,  2i9f + n7gb = 11111
+6lab - 430o = 2i9c,  2i9c + n7ge = 11111
+6lae - 430o = 2i9f,  2i9f + n7gb = 11111
+6lad - 430o = 2i9e,  2i9e + n7gc = 11111
+6lg5 - 430d = 2ifh,  2ifh + n7a9 = 11111
+6lg8 - 430j = 2ife,  2ife + n7ac = 11111
+6lg8 - 430o = 2if9,  2if9 + n7ah = 11111
+6lgb - 430j = 2ifh,  2ifh + n7a9 = 11111
+6lg9 - 430k = 2ife,  2ife + n7ac = 11111
+6lgc - 430k = 2ifh,  2ifh + n7a9 = 11111
+6lg9 - 430m = 2ifc,  2ifc + n7ae = 11111
+6lge - 430m = 2ifh,  2ifh + n7a9 = 11111
+6lgb - 430m = 2ife,  2ife + n7ac = 11111
+6lgb - 430o = 2ifc,  2ifc + n7ae = 11111
+6lgd - 430o = 2ife,  2ife + n7ac = 11111
+6lb5 - 430d = 2iah,  2iah + n7f9 = 11111
+6lb5 - 430g = 2iae,  2iae + n7fc = 11111
+6lb8 - 430g = 2iah,  2iah + n7f9 = 11111
 
 --------------------------
 
-[info] Running Main.Main 
+[info] Running abcdefghppp.Main 
+[DEBUG] Total memory(135.33)GB, Free memory:132.46GB
 Start Calculation
+[DEBUG] Total memory(135.33)GB, Free memory:117.66GB
+[DEBUG] Total memory(135.33)GB, Free memory:100.96GB
+[DEBUG] Total memory(135.33)GB, Free memory:114.26GB
+[DEBUG] Total memory(135.33)GB, Free memory:114.26GB
+[DEBUG] Total memory(135.33)GB, Free memory:114.26GB
+[DEBUG] Total memory(135.33)GB, Free memory:114.22GB
+[DEBUG] Total memory(135.33)GB, Free memory:114.22GB
+[DEBUG] Total memory(135.33)GB, Free memory:114.22GB
+[DEBUG] Total memory(135.33)GB, Free memory:104.45GB
+[DEBUG] Total memory(135.33)GB, Free memory:92.52GB
+[DEBUG] Total memory(135.33)GB, Free memory:80.16GB
+[DEBUG] Total memory(135.33)GB, Free memory:90.94GB
+[DEBUG] Total memory(135.33)GB, Free memory:90.85GB
+[DEBUG] Total memory(135.33)GB, Free memory:90.85GB
+[DEBUG] Total memory(135.33)GB, Free memory:90.85GB
+[DEBUG] Total memory(135.33)GB, Free memory:90.85GB
+[DEBUG] Total memory(135.33)GB, Free memory:90.85GB
+[DEBUG] Total memory(135.33)GB, Free memory:90.85GB
+Total Time used to solve (Base 27, Width 4): 187334ms
 Total number of solutions = 246056285
-Total Time used to solve (Base 27, Width 4): 225819ms
-qpn7 - 240e = olmk, olmk + 3658 = 11111
-qpn7 - 240f = olmj, olmj + 3659 = 11111
-qp8e - 240m = ol7j, ol7j + 36k9 = 11111
-qpn7 - 240i = olmg, olmg + 365c = 11111
-qp8e - 240i = ol7n, ol7n + 36k5 = 11111
-qp85 - 240m = ol7a, ol7a + 36ki = 11111
-qpna - 240k = olmh, olmh + 365b = 11111
-qpnc - 240j = olmk, olmk + 3658 = 11111
-qpnb - 240k = olmi, olmi + 365a = 11111
-qpn7 - 240j = olmf, olmf + 365d = 11111
-qp85 - 240d = ol7j, ol7j + 36k9 = 11111
-qp8b - 240m = ol7g, ol7g + 36kc = 11111
-qp89 - 240d = ol7n, ol7n + 36k5 = 11111
-qp8b - 240n = ol7f, ol7f + 36kd = 11111
-qp8c - 240m = ol7h, ol7h + 36kb = 11111
-qp8b - 240f = ol7n, ol7n + 36k5 = 11111
-qp85 - 240e = ol7i, ol7i + 36ka = 11111
-qpk9 - 240d = oljn, oljn + 3685 = 11111
-qpna - 240i = olmj, olmj + 3659 = 11111
-qpk5 - 240e = olji, olji + 368a = 11111
-qp8i - 240m = ol7n, ol7n + 36k5 = 11111
-qpk7 - 240b = oljn, oljn + 3685 = 11111
-qp8a - 240m = ol7f, ol7f + 36kd = 11111
-qp8d - 240h = ol7n, ol7n + 36k5 = 11111
-qp8d - 240m = ol7i, ol7i + 36ka = 11111
-qp8c - 240g = ol7n, ol7n + 36k5 = 11111
-qp8e - 240n = ol7i, ol7i + 36ka = 11111
-qpn9 - 240g = olmk, olmk + 3658 = 11111
-qpn8 - 240g = olmj, olmj + 3659 = 11111
-qp8f - 240j = ol7n, ol7n + 36k5 = 11111
-qpn8 - 240k = olmf, olmf + 365d = 11111
-qpnc - 240k = olmj, olmj + 3659 = 11111
-qp89 - 240n = ol7d, ol7d + 36kf = 11111
-qp8d - 240n = ol7h, ol7h + 36kb = 11111
-qp85 - 240n = ol79, ol79 + 36kj = 11111
-qpn7 - 240g = olmi, olmi + 365a = 11111
-qp85 - 240j = ol7d, ol7d + 36kf = 11111
-qpn9 - 240j = olmh, olmh + 365b = 11111
-qpnb - 240i = olmk, olmk + 3658 = 11111
-qpn8 - 240j = olmg, olmg + 365c = 11111
-qp8f - 240n = ol7j, ol7j + 36k9 = 11111
-qp89 - 240j = ol7h, ol7h + 36kb = 11111
-qpn9 - 240k = olmg, olmg + 365c = 11111
-qp8a - 240i = ol7j, ol7j + 36k9 = 11111
-qpna - 240h = olmk, olmk + 3658 = 11111
-qpn8 - 240h = olmi, olmi + 365a = 11111
-qpn8 - 240i = olmh, olmh + 365b = 11111
-qp8a - 240e = ol7n, ol7n + 36k5 = 11111
-qp85 - 240h = ol7f, ol7f + 36kd = 11111
-qp85 - 240f = ol7h, ol7h + 36kb = 11111
+oq78 - 230g = mn6j,  mn6j + 54l9 = 11111
+np84 - 230c = lm7j,  lm7j + 65k9 = 11111
+mq95 - 230e = kn8i,  kn8i + 74ja = 11111
+np89 - 230c = lm7o,  lm7o + 65k4 = 11111
+mq95 - 230f = kn8h,  kn8h + 74jb = 11111
+np84 - 230d = lm7i,  lm7i + 65ka = 11111
+mq95 - 230h = kn8f,  kn8f + 74jd = 11111
+np8a - 230d = lm7o,  lm7o + 65k4 = 11111
+mq95 - 230l = kn8b,  kn8b + 74jh = 11111
+np84 - 230e = lm7h,  lm7h + 65kb = 11111
+mq96 - 230f = kn8i,  kn8i + 74ja = 11111
+np8b - 230e = lm7o,  lm7o + 65k4 = 11111
+mq96 - 230g = kn8h,  kn8h + 74jb = 11111
+np84 - 230f = lm7g,  lm7g + 65kc = 11111
+oq79 - 230g = mn6k,  mn6k + 54l8 = 11111
+np8c - 230f = lm7o,  lm7o + 65k4 = 11111
+oq78 - 230h = mn6i,  mn6i + 54la = 11111
+np84 - 230g = lm7f,  lm7f + 65kd = 11111
+oq7a - 230h = mn6k,  mn6k + 54l8 = 11111
+mq96 - 230h = kn8g,  kn8g + 74jc = 11111
+np8d - 230g = lm7o,  lm7o + 65k4 = 11111
+oq78 - 230i = mn6h,  mn6h + 54lb = 11111
+mq96 - 230i = kn8f,  kn8f + 74jd = 11111
+oq7b - 230i = mn6k,  mn6k + 54l8 = 11111
+mq96 - 230l = kn8c,  kn8c + 74jg = 11111
+oq78 - 230j = mn6g,  mn6g + 54lc = 11111
+np8e - 230h = lm7o,  lm7o + 65k4 = 11111
+oq7c - 230j = mn6k,  mn6k + 54l8 = 11111
+np84 - 230i = lm7d,  lm7d + 65kf = 11111
+mq9a - 230l = kn8g,  kn8g + 74jc = 11111
+oq78 - 230k = mn6f,  mn6f + 54ld = 11111
+np8f - 230i = lm7o,  lm7o + 65k4 = 11111
+oq78 - 230p = mn6a,  mn6a + 54li = 11111
+mq9c - 230l = kn8i,  kn8i + 74ja = 11111
+np84 - 230j = lm7c,  lm7c + 65kg = 11111
+oq7i - 230p = mn6k,  mn6k + 54l8 = 11111
+np8g - 230j = lm7o,  lm7o + 65k4 = 11111
+oq7a - 230i = mn6j,  mn6j + 54l9 = 11111
+np8a - 230i = lm7j,  lm7j + 65k9 = 11111
+oq79 - 230j = mn6h,  mn6h + 54lb = 11111
+np89 - 230j = lm7h,  lm7h + 65kb = 11111
+oq79 - 230k = mn6g,  mn6g + 54lc = 11111
+mq9a - 230o = kn8d,  kn8d + 74jf = 11111
+np89 - 230o = lm7c,  lm7c + 65kg = 11111
+oq7c - 230k = mn6j,  mn6j + 54l9 = 11111
+np8g - 230o = lm7j,  lm7j + 65k9 = 11111
+mq9f - 230o = kn8i,  kn8i + 74ja = 11111
+oq79 - 230p = mn6b,  mn6b + 54lh = 11111
+np89 - 230q = lm7a,  lm7a + 65ki = 11111
+mq9a - 230p = kn8c,  kn8c + 74jg = 11111
 
 
 --------------------------------

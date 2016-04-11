@@ -13,3 +13,5 @@ Further optimization include:
 # Result
 After using loop instead of lazy list, there is a about 8x speed up.
 After using loop and array, the performance is comparable to the C version (<40s for base 29 width 4).
+
+Added an iteration/(somewhat) cps version that uses no lazy lists. Uses less memory and a bit faster.

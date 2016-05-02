@@ -1,5 +1,16 @@
 ### latest update and next step
 
+A faster lisp version after upgrade the c loop version to w4.  The new
+version is much faster (0.14 seconds vs 30 seconds under the same
+computer in base 34).  W4 base 29 is sort of run-able and only 10 times
+slower than the reference c version (upgraded by me).  Still 3,000
+times slower than generative c but at least got a version that can
+finish just over one day (not one week).
+
+Also trying the github desktop version for pull request.  Fork on
+github then clone, after update commit and sync.  Then pull request.
+Still how it goes.  (Not sure)
+
 #### update lisp using my loop c w4 version 
 - about only 1 order of magnitue cf similar c program, not 3,000 cf generateive c version
 - with ab, cd loop and then calculate ef, gh

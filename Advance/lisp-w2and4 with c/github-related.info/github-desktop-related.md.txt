@@ -1,0 +1,12 @@
+github-related.readme
+
+Instead of trying the command line which is more powerful, try the github desktop version for pull request.  
+
+- Fork on github 
+- clone
+- add files
+- update commit and sync
+- then pull request. 
+
+See how it goes. 
+

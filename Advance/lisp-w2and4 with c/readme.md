@@ -1,15 +1,73 @@
-### xnastudio is the original writer of a better version of lisp using style
+### latest update and next step
+
+A faster lisp version after upgrade the c loop version to w4.  The new
+version is much faster (0.14 seconds vs 30 seconds under the same
+computer in base 34).  W4 base 29 is sort of run-able and only 10 times
+slower than the reference c version (upgraded by me).  Still 3,000
+times slower than generative c but at least got a version that can
+finish just over one day (not one week).
+
+Also trying the github desktop version for pull request.  Fork on
+github then clone, after update commit and sync.  Then pull request.
+Still how it goes.  (Not sure)
+
+#### update lisp using my loop c w4 version 
+- about only 1 order of magnitue cf similar c program, not 3,000 cf generateive c version
+- with ab, cd loop and then calculate ef, gh
+- not the generative c (see the sub-directory of the reference c programs I have updated to w4; the wx general version not update)
+- w2 base 34 down to 0.14 seconds
+- but w4 base 29 still take 106932 seconds 
+- it takes 3000 times slower than the fastest one, but at least runable
+  but compared to generative c is not fair to lisp as it may be just my competence issue
+  cf with the loop c (update by me in sub-directory to w4) make more sense
+- loop c w4 my version at base 29 is 16020 seconds or lisp is only 10 times slower 
+
+####long tail mode 
+- last update here nearly 1 month, go to the long tail mode
+- next step, if still on it, would try 
+	- c          : gpgpu (using c) most likely
+	- swift      : upgrade to w4 and migrate to iOS (to prepare for the metal / openCL version)
+	- python     : update python to w4 (similar to my c effort in the subdirectory) to prepare for gpgpu version
+	- lisp       : the generative c vesrion to lisp (still not sure about that one;
+				    I think I will just get the binary comparsion first 
+				    unless brutal approach of copying the logic straight to lisp :-(
+	- scheme     : need upgrade after lisp upgrade and also some gpgpu use scheme not lisp
+	- others     : as this is in c, python, scheme etc. can be ported easily to other machines (gameboy?)
+	- Assembler  : ... Probably not S370 or 6502 I am familiar with
+						try ARM and 80x86 most likely but likely below
+	- bare metal : ... Not sure OS has any issue with it but just interesting to know
+							Bare metal Intel, Pi/gameboy or even (for IoT) Photon run this
+							especially last one -- how to output back 
+								1 LED using my Morse Code LED signal?
+							or just 4 LED with flashing in between to tell the solutions :-)  
+- most likely amend the user end problem statement and try something else
+    in this respect, lacking of input, storage etc. would harm this as 
+    a kind of bigger hello world effort
+
+In fact, this whole exercise is just a better and bigger hello world ... Hello ABCDEFGHPPP!
+
+============================ for my future me only ==================
+
+#### back burner 
+
+- Z390       : report issues to forum, dealing with some "bugs" in Z390 (mainframe cobol compiler) on PC
+					(which use java and hence would not be able to do w4 I think)
+- minizinc   : ask around on the backend enginee issues, not promising
+- ocaml      : not likely; need vm to run another mac to see the configuration issue of mine
+	
+
+### xnastudio is the original writer of a better version of lisp with style
 
 #### Based on the idea of xnastudio (see the lisp under the non-challenge section), this round is try to improve for both 9 loops and move both to w4
 
-#### w4 files
+#### w4 files (version 1)
 
 w4-func-try1.lisp                       (source based on w4-func-pretty.lisp and adapt for w4)
 w4-func-try1.lisp (up to 21).output.txt (output up to base 21)
 
 w4-opt1-m.lisp                          (9-loop opt1-m adapted for w4)
 
-#### w4 results
+#### w4 results (version 1)
 
 The function code is modified to run the w4 version under Macbook Air 14 and result is:
 
@@ -19,15 +77,23 @@ BASE:25 ...            - still running  (... :-)))))))))))))))
 
 The 9-loop w4 version never return ... 
 
-#### w2 files
+#### w4 after my loop c w4 version (but not the generetive c version)
+
+to be updated ???
+
+#### w2 files (versio 1)
 
 w2-func-pretty.lisp      (same as xnastudio but some minor cosemtic changes)
 
 w2-opt1-m.lispt          (optimised 9 loop which reduce time for 5 hours to 2 seconds)
 w2-opt1-m.....output.txt (soe ooutput)
 
-#### w2 version func and the 9-loop result (opt1 is the optimise 9 loop version) ===
+#### w2 version (version 1) func and the 9-loop result (opt1 is the optimise 9 loop version) ===
 
+#### w2 vesrion based on my loop c w2 version (but not the generateive c version)
+
+#### ??? table to be updated but sub-seconds for lisp using
+#### !!!! (0.14 seconds for w2 base 34 lisp change to loop c version)
 
 |            |MAir-9loop   |L-100S-opt1  |W10-i3-func |MAir-func   |L-100S-func |w10-i5-U6200|Mair        |
 |:-----------|:------------|:------------|:-----------|:-----------|:-----------|:-----------|:-----------|
@@ -60,7 +126,7 @@ w2-opt1-m.....output.txt (soe ooutput)
 |            |             |             |            |            |            |            |            |
 
 
-#### details (just for my future self)
+#### further details (just for my future self)
 
 ##### general remarks
 
@@ -92,14 +158,17 @@ The strength is its weakness I am afraid.
 
 Still challenge for optimisation is valid, I think xnastudio has exhausted most of the possibility; the general approach:
 
-- check the user requirement (done)
+- check the user requirement (still not sure about the moving block and later generte requirement)
 - check the rep. (DSL, data-driven, ... etc.)
 - check the algo ... (seems ok but has to learn from others; 
   no minimax, Alpha-Beta, neural network, ... etc. herustic)
 - deal with some particular op e.g. 
-  = symmetry (c+d = d+e = p); not understand so far but it cut significantly ?????
+  = symmetry (ab-cd = ef+gh = ppp) (done) 
+  	; loop over ab, cd 
+  	; and then ef = ab - cd and gh = ppp - ef
+  	; need faster uniqueness check as the issues is not loop but checking the base no. unique
   = use p=1 (done)
-
+- use parallel gngpu machine (ios Metal, openCL, Niavia ...) 
 - macro (not exhaustive but helping)
 - tail call (used)
 - rule engine (?)
@@ -168,3 +237,25 @@ Amend to use compile then run under sbcl as follows
 (sb-ext:save-lisp-and-die "opt1-main2c" :toplevel #'main :executable t)
 
 But result is the same
+
+=== comments from lisp w2 ... ??? to be updated
+
+;; ab - cd = ef ef + gh = ppp save becauase it try to generate the number instead of looping
+;; loop ab, cd then ef = ab - cd  and gh = ppp - ef
+;; but generate number need fast checking the uniqueness on base ...
+
+;; copying the generative c is one direction; not tried yet 
+;; -- this after c version use loop c not generative c
+
+;; further macro is another possibilities.
+
+;; but vector and gpgpu would be a better direction to try
+
+;; back to the original source, still think moving brick is a better intrepretation of the problem statment
+
+;; also how about using machine learning on the case
+;; a c program 37 seconds generate a 79m solutions among billions of possibilities
+;; a // run machine with neurual newtork, ... 
+;; a human with real neural network ...
+;; what is better at what is the real questions, not either-or 
+

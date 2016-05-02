@@ -1,0 +1,160 @@
+# cheatsheet for pull request
+
+## Key reference:
+
+a. mainly follows https://help.github.com/articles/fork-a-repo/
+
+b. and definitely https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/ and this https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+c. may need info from https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
+
+d. and some info from https://help.github.com/articles/set-up-git/
+
+## A remark for this cheatsheet
+
+Create for myself mainly in the past as git is still a mystery to me.  But if it is not confused to you due to my speciial perfence, you may see whether it help.  In particular, I perfer to use terminal and ssh keys.  
+
+This may not be acceptable but given you use lisp, GUI may not be key I guess but as Mr Tang said the GUI route using Github Desktop may be easier. 
+
+However, ssh keys may be problematic especially if you use corporate network.  But I never successfully use the GUI or https.  Sorry.  The hard way.
+
+(I saw you already created the forked repo.  May be this cheatsheet is not needed.  Cheers!)
+
+## 1. Get your github account and login 
+
+Before you can do anything, you have to have an account first.  Mine is dng8888.  I use your-account as a note.
+
+    Login on the web to Github using your-account.
+
+## 2. Fork the abcdefghppp origin
+
+goto https://github.com/mingchuno/ABCDEFGHPPP
+on the right hand side top corner there is 3 buttons: watch, star and fork
+
+    Press the fork, the web page would jump to your forked copy i.e. it is
+
+under your-account (dng8888 in my case) and you have a forked git repo
+
+The link is: https://github.com/your-account/ABCDEFGHPPP
+
+Under the title left corner you can see something like
+
+your-account/ABCDEFGHPPP
+forked from mingchuno/ABCDEFGHPPP
+
+<-- this is key page and key link, as you need to use this particular forked repo to do pull request
+
+## 3. Create a local copy of the forke repo 
+
+    cd ~
+    cd primary
+    mkdir real-clone
+    cd real-clone
+    git clone git@github.com:dng8888/ABCDEFGHPPP.git
+    cd ABCDEFGHPPP
+
+--> You may note that you have not create ABCDEFGHPPP directory.  This is the master directory.  It is important you do not touch anything under ABCDEFGHPPP except those you change.  In particular, create a subdirectory e.g. Lisp (and another sub-directory scheme; you can see the convention easily).  Do not touch any other files or directories under that ABCDEFGHPPP.  Any change to there change the source ultimately.  Usually the coordinator do not like people touch other people's files or directory.  
+
+To repeat as it is important, only create a directory under ABCDEFGHPPP (or ABCDEFGHPPP/Advance) later and change things under that directory you created.
+
+## 4. Test you local copy work (please do not add anything real)
+
+    git add --all
+    git commit -am "test add into the clone of the forked repo"
+    git pull
+    git push
+
+## 5.  The last command git push will fail as you have not created your ssh key
+
+(obviously you have to your owne email, choose your own filename -- I really use id_rsa and the key is passphrase, no one can help you to recover that. )
+
+    ssh-keygen -t rsa -b 4096 -C "xxxxx@gmail.com"
+       Generating public/private rsa key pair.
+       Enter file in which to save the key (/Users/$USER/.ssh/id_rsa): id_rsa
+       Enter passphrase (empty for no passphrase): 
+       Enter same passphrase again: 
+
+If you create your own id file, you may need to move it
+
+    mv id* ~/.ssh/
+
+    ls -al ~/.ssh/
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa
+
+Follows https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ e.g.
+
+    pbcopy < ~/.ssh/id_rsa.pub
+
+## 6.  use the clipboard info and add the pubic key under your github 
+
+Repeat, just follow https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+
+## 7. then try git push again
+
+    git push
+
+## 8. maintain links with the real master, not just your own forked copy
+
+    git remote -v
+    git remote add upstream git@github.com:mingchuno/ABCDEFGHPPP.git
+    git remote -v
+
+## 9. get your versions into a sub-directory you created under ~/primary/real-clone/ABCDEFGHPPP/
+
+    cd ~/primary/real-clone/ABCDEFGHPPP/
+    mkdir lisp
+    (do your things as your required)
+
+    cd ~/primary/real-clone/ABCDEFGHPPP/
+    mkdir scheme
+    (do your things as your required)
+    
+
+## *10* repeat these steps 10-12 every time you want to submit a change to your files get the first two commits of minizinc
+
+This is to get anything change in this local version to your own forked repo
+
+    cd ~/primary/real-clone/ABCDEFGHPPP/
+
+    git remote -v
+    git fetch upstream
+    git checkout master
+    git merge upstream/master
+    git push 
+
+## *11* 
+
+Assume you have update files under your directories (say lisp or scheme)
+
+	cd ~/primary/real-clone/ABCDEFGHPPP/
+
+	git add --all
+	git commit -am "---say something meaning--- mine has used cobol85-9-loop"
+    git pull
+    git push
+
+## *12* under https://github.com/your-account/ABCDEFGHPPP
+
+Go to your own forked repo https://github.com/your-account/ABCDEFGHPPP
+
+Make sure under its title it has a remark forked from mingchuno/ABCDEFGHPPP
+
+Click the green button called "create pull request"
+
+You will be shown a page to double check all changes to files are ok, click a button (sorry forget what the name is) to confirm you really want to create one. 
+
+You will have to a chance to type a title for that change and an explanation.  Both are important for the coordinator to accept or reject your change.
+
+If ok, submit the pull request.
+
+(You may be aske to do more things.  In which case you need to do that, update the files under your directory and repeat step 10-12.  Actually not all stpes are needed but to say the truth, I just do it.
+
+If big problem, change the name of the real-clone and start from step 3 again. The SSH keys is fine and no need to repeat.)
+
+## Good luck.  May be you can write how to use Desktop GIT and/or http.  I found it very hard to understand and fall back to this.
+
+
+
+
